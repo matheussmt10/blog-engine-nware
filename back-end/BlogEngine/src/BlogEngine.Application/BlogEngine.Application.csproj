@@ -7,13 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BlogEngine.Communication\BlogEngine.Communication.csproj" />
-    <ProjectReference Include="..\BlogEngine.Domain\BlogEngine.Domain.csproj" />
-    <ProjectReference Include="..\BlogEngine.Exception\BlogEngine.Exception.csproj" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="UseCases\Posts\" />
+    <ProjectReference Include="..\BlogEngine.Communication\BlogEngine.Communication.csproj" />
+    <ProjectReference Include="..\BlogEngine.Domain\BlogEngine.Domain.csproj" />
+    <ProjectReference Include="..\BlogEngine.Exception\BlogEngine.Exception.csproj" />
   </ItemGroup>
 
 </Project>

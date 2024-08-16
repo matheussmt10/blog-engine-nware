@@ -361,7 +361,8 @@
         "dependencies": {
           "BlogEngine.Communication": "1.0.0",
           "BlogEngine.Domain": "1.0.0",
-          "BlogEngine.Exception": "1.0.0"
+          "BlogEngine.Exception": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0"
         },
         "compile": {
           "bin/placeholder/BlogEngine.Application.dll": {}

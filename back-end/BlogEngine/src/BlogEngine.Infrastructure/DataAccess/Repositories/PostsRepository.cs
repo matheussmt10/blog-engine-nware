@@ -5,12 +5,19 @@ namespace BlogEngine.Infrastructure.DataAccess.Repositories;
 
 internal class PostsRepository : IPostsRepository
 {
+    private readonly BlogEngineDBContext _dbContext;
+
+    public PostsRepository(BlogEngineDBContext dbContext)
+    {
+        _dbContext = dbContext;
+    }
+
     public void Add(Post post)
     {
-        var dbContext = new BlogEngineNwareDBContext();
+        
 
-        dbContext.Posts.Add(post);
+       _dbContext.Posts.Add(post);
 
-        dbContext.SaveChanges();
+       _dbContext.SaveChanges();
     }
 }

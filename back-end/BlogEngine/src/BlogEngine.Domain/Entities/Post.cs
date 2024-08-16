@@ -2,7 +2,7 @@
 
 public class Post
 {
-    public long Id { get; set; }
+    public Guid Id { get; set; }
 
     public string Title { get; set; } = string.Empty;
 

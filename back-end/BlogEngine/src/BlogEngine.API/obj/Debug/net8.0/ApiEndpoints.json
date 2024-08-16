@@ -1,12 +1,18 @@
 [
   {
     "ContainingType": "BlogEngine.API.Controllers.PostsController",
-    "Method": "GetAll",
+    "Method": "Create",
     "RelativePath": "api/Posts",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BlogEngine.Communication.requests.RequestPost",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]

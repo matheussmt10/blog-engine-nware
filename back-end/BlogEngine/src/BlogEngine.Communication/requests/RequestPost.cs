@@ -1,6 +1,6 @@
 ﻿namespace BlogEngine.Communication.requests;
 
-public class RequestPosts
+public class RequestPost
 {
     public string Title { get; set; } = string.Empty;
 
