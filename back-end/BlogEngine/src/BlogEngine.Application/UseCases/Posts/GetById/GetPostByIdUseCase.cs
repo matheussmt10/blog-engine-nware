@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using BlogEngine.Communication.responses;
 using BlogEngine.Domain.Repositories.Posts;
+using BlogEngine.Exception;
+using BlogEngine.Exception.ExceptionBase;
 
 namespace BlogEngine.Application.UseCases.Posts.GetById;
 
@@ -19,6 +21,11 @@ public class GetPostByIdUseCase : IGetPostByIdUseCase
     public async Task<ResponseCreatedPost> Execute(Guid id)
     {
         var result = await _repository.GetById(id);
+
+        if (result is null) 
+        {
+            throw new NotFoundException(ResourceErrorMessages.POST_NOT_FOUND);
+        }
 
         return _mapper.Map<ResponseCreatedPost>(result);
     }

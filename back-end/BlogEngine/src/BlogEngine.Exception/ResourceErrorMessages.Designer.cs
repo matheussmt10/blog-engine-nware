@@ -70,6 +70,15 @@ namespace BlogEngine.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Post not found.
+        /// </summary>
+        public static string POST_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("POST_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Posts cannot be for the future.
         /// </summary>
         public static string POSTS_CANNOT_FOR_THE_FUTURE {

@@ -129,4 +129,7 @@
   <data name="CONTENT_REQUIRED" xml:space="preserve">
     <value>The content is required</value>
   </data>
+  <data name="POST_NOT_FOUND" xml:space="preserve">
+    <value>Post not found</value>
+  </data>
 </root>
