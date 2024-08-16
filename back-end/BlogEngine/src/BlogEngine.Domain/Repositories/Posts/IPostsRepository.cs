@@ -3,5 +3,5 @@
 namespace BlogEngine.Domain.Repositories.Posts;
 public interface IPostsRepository
 {
-    public void Add(Post post);
+    public Task Add(Post post);
 }

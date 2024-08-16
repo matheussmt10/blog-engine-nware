@@ -1,6 +1,7 @@
 ﻿using BlogEngine.Communication.requests;
 using BlogEngine.Communication.responses;
 using BlogEngine.Domain.Entities;
+using BlogEngine.Domain.Repositories;
 using BlogEngine.Domain.Repositories.Posts;
 
 namespace BlogEngine.Application.UseCases.Posts;
@@ -8,12 +9,14 @@ namespace BlogEngine.Application.UseCases.Posts;
 public class CreatePostUseCase : ICreatePostUseCase
 {
     private readonly IPostsRepository _repository;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public CreatePostUseCase(IPostsRepository repository)
+    public CreatePostUseCase(IPostsRepository repository, IUnitOfWork unitOfWork)
     {
         _repository = repository;
+        _unitOfWork = unitOfWork;
     }
-    public Post Execute(RequestPost request)
+    public async Task<ResponsePost> Execute(RequestPost request)
     {
 
         var post = new Post
@@ -24,10 +27,10 @@ public class CreatePostUseCase : ICreatePostUseCase
             Content = request.Content,
         };
 
-        _repository.Add(post);
+       await _repository.Add(post);
 
-        
+       await _unitOfWork.Commit();
 
-        return post;
+        return new ResponsePost();
     }
 }

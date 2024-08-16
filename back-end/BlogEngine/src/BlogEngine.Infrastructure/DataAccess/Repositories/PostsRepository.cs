@@ -12,12 +12,8 @@ internal class PostsRepository : IPostsRepository
         _dbContext = dbContext;
     }
 
-    public void Add(Post post)
+    public async Task Add(Post post)
     {
-        
-
-       _dbContext.Posts.Add(post);
-
-       _dbContext.SaveChanges();
+      await _dbContext.Posts.AddAsync(post);
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace BlogEngine.Communication.responses;
 
-public class ResponsePosts
+public class ResponsePost
 {
     public long Id { get; set; }
     public string Title { get; set; } = string.Empty;

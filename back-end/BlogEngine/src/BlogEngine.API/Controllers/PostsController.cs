@@ -9,12 +9,12 @@ namespace BlogEngine.API.Controllers;
 public class PostsController : ControllerBase
 {
     [HttpPost]
-    public IActionResult Create(
+    public async Task<IActionResult> Create(
         [FromServices] ICreatePostUseCase useCase,
         [FromBody] RequestPost request
         )
     {
-        var response = useCase.Execute(request);
+        var response = await useCase.Execute(request);
 
         return Created(string.Empty, response);
     }

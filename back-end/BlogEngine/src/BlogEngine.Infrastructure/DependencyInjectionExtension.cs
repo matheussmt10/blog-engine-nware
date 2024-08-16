@@ -1,4 +1,5 @@
-﻿using BlogEngine.Domain.Repositories.Posts;
+﻿using BlogEngine.Domain.Repositories;
+using BlogEngine.Domain.Repositories.Posts;
 using BlogEngine.Infrastructure.DataAccess;
 using BlogEngine.Infrastructure.DataAccess.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +18,7 @@ public static class DependencyInjectionExtension
 
     private static void AddRepositories(IServiceCollection services)
     {
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<IPostsRepository, PostsRepository>();
     }  
     
