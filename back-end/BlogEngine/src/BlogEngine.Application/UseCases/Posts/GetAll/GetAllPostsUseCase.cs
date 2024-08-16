@@ -2,7 +2,7 @@
 using BlogEngine.Communication.responses;
 using BlogEngine.Domain.Repositories.Posts;
 
-namespace BlogEngine.Application.UseCases.Posts;
+namespace BlogEngine.Application.UseCases.Posts.GetAll;
 
 public class GetAllPostsUseCase : IGetAllPostsUseCase
 {

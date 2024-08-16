@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlogEngine.Application.UseCases.Posts;
+namespace BlogEngine.Application.UseCases.Posts.GetAll;
 public interface IGetAllPostsUseCase
 {
     public Task<ResponseCreatedPosts> Execute();

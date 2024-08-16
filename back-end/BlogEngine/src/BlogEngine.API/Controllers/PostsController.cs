@@ -1,4 +1,5 @@
-﻿using BlogEngine.Application.UseCases.Posts;
+﻿using BlogEngine.Application.UseCases.Posts.Create;
+using BlogEngine.Application.UseCases.Posts.GetAll;
 using BlogEngine.Application.UseCases.Posts.GetById;
 using BlogEngine.Communication.requests;
 using BlogEngine.Communication.responses;
