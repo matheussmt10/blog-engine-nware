@@ -1,5 +1,6 @@
 ﻿using BlogEngine.Application.AutoMapper;
 using BlogEngine.Application.UseCases.Posts;
+using BlogEngine.Application.UseCases.Posts.GetById;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BlogEngine.Application;
@@ -22,5 +23,6 @@ public static class DependencyInjectionExtension
     {
         services.AddScoped<ICreatePostUseCase, CreatePostUseCase>();
         services.AddScoped<IGetAllPostsUseCase, GetAllPostsUseCase>();
+        services.AddScoped<IGetPostByIdUseCase, GetPostByIdUseCase>();
     }
 }

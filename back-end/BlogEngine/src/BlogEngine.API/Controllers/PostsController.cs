@@ -1,4 +1,5 @@
 ﻿using BlogEngine.Application.UseCases.Posts;
+using BlogEngine.Application.UseCases.Posts.GetById;
 using BlogEngine.Communication.requests;
 using BlogEngine.Communication.responses;
 using Microsoft.AspNetCore.Http;
@@ -32,6 +33,20 @@ public class PostsController : ControllerBase
 
         if (response.Posts.Count() == 0)
             return NotFound();
+        return Ok(response);
+    }
+
+    [HttpGet]
+    [Route("{id}")]
+    [ProducesResponseType(typeof(ResponseCreatedPost), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> GetById(
+    [FromServices] IGetPostByIdUseCase useCase,
+    [FromRoute] Guid id
+    )
+    {
+        var response = await useCase.Execute(id);
+
         return Ok(response);
     }
 }
