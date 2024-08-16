@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BlogEngine.Application\BlogEngine.Application.csproj" />
     <ProjectReference Include="..\BlogEngine.Communication\BlogEngine.Communication.csproj" />
     <ProjectReference Include="..\BlogEngine.Exception\BlogEngine.Exception.csproj" />

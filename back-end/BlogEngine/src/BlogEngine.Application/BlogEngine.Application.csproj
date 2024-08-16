@@ -12,4 +12,8 @@
     <ProjectReference Include="..\BlogEngine.Exception\BlogEngine.Exception.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UseCases\Posts\" />
+  </ItemGroup>
+
 </Project>

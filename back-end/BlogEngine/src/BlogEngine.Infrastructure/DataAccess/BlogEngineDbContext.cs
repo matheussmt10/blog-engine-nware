@@ -3,15 +3,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BlogEngine.Infrastructure.DataAccess;
 
-public class BlogEngineNwareDBContext : DbContext
+internal class BlogEngineNwareDBContext : DbContext
 {
     public DbSet<Post> Posts { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        var connectionString = "Server=localhost;Database=blog_engine_db;port=5432;Uid=admin;Pwd=blog_12@#Bh%232";
+        var connectionString = "Server=localhost;Database=blog_engine_db;port=3306;Uid=root;Pwd=admin";
 
-        var serverVersion = new MySqlServerVersion(new Version());
+        var serverVersion = new MySqlServerVersion(new Version(8,0,39));
         optionsBuilder.UseMySql(connectionString, serverVersion);
     }
 }
