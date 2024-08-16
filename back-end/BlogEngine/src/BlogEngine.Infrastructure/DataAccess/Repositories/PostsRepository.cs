@@ -1,5 +1,6 @@
 ﻿using BlogEngine.Domain.Entities;
 using BlogEngine.Domain.Repositories.Posts;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlogEngine.Infrastructure.DataAccess.Repositories;
 
@@ -15,5 +16,12 @@ internal class PostsRepository : IPostsRepository
     public async Task Add(Post post)
     {
       await _dbContext.Posts.AddAsync(post);
+    }
+
+    public async Task<List<Post>> GetAll()
+    {
+        var result = await _dbContext.Posts.ToListAsync();
+        Console.WriteLine("test");
+        return result;
     }
 }

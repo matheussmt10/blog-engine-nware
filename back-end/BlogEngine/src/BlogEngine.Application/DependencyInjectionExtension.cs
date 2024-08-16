@@ -21,5 +21,6 @@ public static class DependencyInjectionExtension
     private static void AddUseCases(IServiceCollection services)
     {
         services.AddScoped<ICreatePostUseCase, CreatePostUseCase>();
+        services.AddScoped<IGetAllPostsUseCase, GetAllPostsUseCase>();
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace BlogEngine.Domain.Entities;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BlogEngine.Domain.Entities;
 
 public class Post
 {
