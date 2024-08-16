@@ -3,6 +3,7 @@ using BlogEngine.Application.UseCases.Posts.GetAll;
 using BlogEngine.Application.UseCases.Posts.GetById;
 using BlogEngine.Communication.requests;
 using BlogEngine.Communication.responses;
+using BlogEngine.Exception.ExceptionBase;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,9 +19,9 @@ public class PostsController : ControllerBase
         [FromBody] RequestCreatePost request
         )
     {
-        var response = await useCase.Execute(request);
+            var response = await useCase.Execute(request);
 
-        return Created(string.Empty, response);
+            return Created(string.Empty, response);
     }
 
     [HttpGet]

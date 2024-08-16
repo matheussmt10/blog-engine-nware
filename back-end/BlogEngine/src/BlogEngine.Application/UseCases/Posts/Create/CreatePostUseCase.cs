@@ -4,6 +4,7 @@ using BlogEngine.Communication.responses;
 using BlogEngine.Domain.Entities;
 using BlogEngine.Domain.Repositories;
 using BlogEngine.Domain.Repositories.Posts;
+using BlogEngine.Exception.ExceptionBase;
 
 namespace BlogEngine.Application.UseCases.Posts.Create;
 
@@ -42,9 +43,11 @@ public class CreatePostUseCase : ICreatePostUseCase
 
         var result = validator.Validate(request);
 
-        if (!result.IsValid) {
+        if (!result.IsValid) 
+        {
             var errorMessages = result.Errors.Select(f => f.ErrorMessage).ToList();
-            throw new ArgumentException();
+
+            throw new ErrorOnValidationException(errorMessages);
         }
     }
 }
