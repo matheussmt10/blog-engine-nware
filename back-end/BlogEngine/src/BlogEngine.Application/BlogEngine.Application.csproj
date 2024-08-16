@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogEngine.Communication\BlogEngine.Communication.csproj" />
+    <ProjectReference Include="..\BlogEngine.Domain\BlogEngine.Domain.csproj" />
+    <ProjectReference Include="..\BlogEngine.Exception\BlogEngine.Exception.csproj" />
+  </ItemGroup>
+
+</Project>
