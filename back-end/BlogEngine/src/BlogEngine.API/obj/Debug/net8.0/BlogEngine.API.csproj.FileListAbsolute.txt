@@ -46,3 +46,4 @@ C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.API\obj\Debug\net8.0
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.API\obj\Debug\net8.0\BlogEngine.API.pdb
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.API\obj\Debug\net8.0\BlogEngine.API.genruntimeconfig.cache
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.API\obj\Debug\net8.0\ref\BlogEngine.API.dll
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.API\bin\Debug\net8.0\AutoMapper.dll

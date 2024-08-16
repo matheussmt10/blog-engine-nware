@@ -11,7 +11,7 @@ public class PostsController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create(
         [FromServices] ICreatePostUseCase useCase,
-        [FromBody] RequestPost request
+        [FromBody] RequestCreatePost request
         )
     {
         var response = await useCase.Execute(request);

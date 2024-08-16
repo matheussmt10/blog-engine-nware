@@ -5,5 +5,5 @@ using BlogEngine.Domain.Entities;
 namespace BlogEngine.Application.UseCases.Posts;
 public interface ICreatePostUseCase
 {
-    public Task<ResponsePost> Execute(RequestPost request);
+    public Task<ResponseCreatedPost> Execute(RequestCreatePost request);
 }

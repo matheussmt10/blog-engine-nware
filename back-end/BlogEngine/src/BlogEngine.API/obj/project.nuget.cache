@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mcURHLoFFeI=",
+  "dgSpecHash": "qzsmjbpOOcg=",
   "success": true,
   "projectFilePath": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.API\\BlogEngine.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mathe\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.8\\microsoft.entityframeworkcore.8.0.8.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.8\\microsoft.entityframeworkcore.abstractions.8.0.8.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.8\\microsoft.entityframeworkcore.analyzers.8.0.8.nupkg.sha512",

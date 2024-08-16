@@ -1,4 +1,5 @@
-﻿using BlogEngine.Communication.requests;
+﻿using AutoMapper;
+using BlogEngine.Communication.requests;
 using BlogEngine.Communication.responses;
 using BlogEngine.Domain.Entities;
 using BlogEngine.Domain.Repositories;
@@ -10,27 +11,27 @@ public class CreatePostUseCase : ICreatePostUseCase
 {
     private readonly IPostsRepository _repository;
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IMapper _mapper;
 
-    public CreatePostUseCase(IPostsRepository repository, IUnitOfWork unitOfWork)
+    public CreatePostUseCase(
+        IPostsRepository repository, 
+        IUnitOfWork unitOfWork,
+        IMapper mapper)
     {
         _repository = repository;
         _unitOfWork = unitOfWork;
+        _mapper = mapper;
+
     }
-    public async Task<ResponsePost> Execute(RequestPost request)
+    public async Task<ResponseCreatedPost> Execute(RequestCreatePost request)
     {
 
-        var post = new Post
-        {
-            Id = Guid.NewGuid(),
-            Title = request.Title,
-            PublicationDate = request.PublicationDate,
-            Content = request.Content,
-        };
+       var post = _mapper.Map<Post>(request);
 
        await _repository.Add(post);
 
        await _unitOfWork.Commit();
 
-        return new ResponsePost();
+        return _mapper.Map<ResponseCreatedPost>(post);
     }
 }

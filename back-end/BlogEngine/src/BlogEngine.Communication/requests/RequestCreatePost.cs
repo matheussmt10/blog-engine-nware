@@ -1,8 +1,7 @@
-﻿namespace BlogEngine.Communication.responses;
+﻿namespace BlogEngine.Communication.requests;
 
-public class ResponsePost
+public class RequestCreatePost
 {
-    public long Id { get; set; }
     public string Title { get; set; } = string.Empty;
 
     public DateTime PublicationDate { get; set; }
