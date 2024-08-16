@@ -1,0 +1,16 @@
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\bin\Debug\net8.0\BlogEngine.Infrastructure.deps.json
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\bin\Debug\net8.0\BlogEngine.Infrastructure.dll
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\bin\Debug\net8.0\BlogEngine.Infrastructure.pdb
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\bin\Debug\net8.0\BlogEngine.Domain.dll
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\bin\Debug\net8.0\BlogEngine.Domain.pdb
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\obj\Debug\net8.0\BlogEngine.Infrastructure.csproj.AssemblyReference.cache
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\obj\Debug\net8.0\BlogEngine.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\obj\Debug\net8.0\BlogEngine.Infrastructure.AssemblyInfoInputs.cache
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\obj\Debug\net8.0\BlogEngine.Infrastructure.AssemblyInfo.cs
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\obj\Debug\net8.0\BlogEngine.Infrastructure.csproj.CoreCompileInputs.cache
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\obj\Debug\net8.0\BlogEngine.Infrastructure.sourcelink.json
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\obj\Debug\net8.0\BlogEngi.BDFF77C6.Up2Date
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\obj\Debug\net8.0\BlogEngine.Infrastructure.dll
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\obj\Debug\net8.0\refint\BlogEngine.Infrastructure.dll
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\obj\Debug\net8.0\BlogEngine.Infrastructure.pdb
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Infrastructure\obj\Debug\net8.0\ref\BlogEngine.Infrastructure.dll

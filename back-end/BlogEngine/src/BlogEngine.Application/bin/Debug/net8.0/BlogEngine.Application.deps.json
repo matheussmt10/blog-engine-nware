@@ -1,0 +1,67 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BlogEngine.Application/1.0.0": {
+        "dependencies": {
+          "BlogEngine.Communication": "1.0.0",
+          "BlogEngine.Domain": "1.0.0",
+          "BlogEngine.Exception": "1.0.0"
+        },
+        "runtime": {
+          "BlogEngine.Application.dll": {}
+        }
+      },
+      "BlogEngine.Communication/1.0.0": {
+        "runtime": {
+          "BlogEngine.Communication.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BlogEngine.Domain/1.0.0": {
+        "runtime": {
+          "BlogEngine.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BlogEngine.Exception/1.0.0": {
+        "runtime": {
+          "BlogEngine.Exception.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BlogEngine.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogEngine.Communication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogEngine.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogEngine.Exception/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
