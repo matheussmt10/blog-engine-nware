@@ -20,8 +20,8 @@ internal class PostsRepository : IPostsRepository
 
     public async Task<List<Post>> GetAll()
     {
-        var result = await _dbContext.Posts.ToListAsync();
-        Console.WriteLine("test");
+        var result = await _dbContext.Posts.AsNoTracking().ToListAsync();
+
         return result;
     }
 }
