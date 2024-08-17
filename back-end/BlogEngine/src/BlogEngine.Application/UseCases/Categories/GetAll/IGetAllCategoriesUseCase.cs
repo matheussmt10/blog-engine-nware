@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BlogEngine.Application.UseCases.Categories.GetAll;
-internal interface IGetAllCategoriesUseCase
+public interface IGetAllCategoriesUseCase
 {
     public Task<ResponseCategories> Execute();
 }

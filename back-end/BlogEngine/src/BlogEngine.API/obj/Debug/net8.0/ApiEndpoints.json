@@ -1,21 +1,156 @@
 [
   {
-    "ContainingType": "BlogEngine.API.Controllers.PostsController",
+    "ContainingType": "BlogEngine.API.Controllers.CategoriesController",
     "Method": "Create",
-    "RelativePath": "api/Posts",
+    "RelativePath": "api/categories",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "request",
-        "Type": "BlogEngine.Communication.requests.RequestCreatePost",
+        "Type": "BlogEngine.Communication.Requests.Category.RequestCategory",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "BlogEngine.Communication.responses.ResponseCreatedPost",
+        "Type": "BlogEngine.Communication.Responses.Category.ResponseCategory",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "BlogEngine.API.Controllers.CategoriesController",
+    "Method": "GetAll",
+    "RelativePath": "api/categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "BlogEngine.Communication.Responses.Category.ResponseCategory",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "BlogEngine.API.Controllers.CategoriesController",
+    "Method": "GetById",
+    "RelativePath": "api/categories/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BlogEngine.Communication.Responses.Category.ResponseCategory",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "BlogEngine.API.Controllers.CategoriesController",
+    "Method": "Update",
+    "RelativePath": "api/categories/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "BlogEngine.Communication.Requests.Category.RequestCategory",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "BlogEngine.Communication.responses.ResponseError",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "BlogEngine.Communication.responses.ResponseError",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "BlogEngine.API.Controllers.PostsController",
+    "Method": "Create",
+    "RelativePath": "api/posts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BlogEngine.Communication.Requests.Post.RequestCreatePost",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BlogEngine.Communication.Responses.Post.ResponseCreatedPost",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -28,14 +163,14 @@
   {
     "ContainingType": "BlogEngine.API.Controllers.PostsController",
     "Method": "GetAll",
-    "RelativePath": "api/Posts",
+    "RelativePath": "api/posts",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "BlogEngine.Communication.responses.ResponseCreatedPost",
+        "Type": "BlogEngine.Communication.Responses.Post.ResponseCreatedPost",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -57,7 +192,7 @@
   {
     "ContainingType": "BlogEngine.API.Controllers.PostsController",
     "Method": "GetById",
-    "RelativePath": "api/Posts/{id}",
+    "RelativePath": "api/posts/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -70,7 +205,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BlogEngine.Communication.responses.ResponseCreatedPost",
+        "Type": "BlogEngine.Communication.Responses.Post.ResponseCreatedPost",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -92,7 +227,7 @@
   {
     "ContainingType": "BlogEngine.API.Controllers.PostsController",
     "Method": "Update",
-    "RelativePath": "api/Posts/{id}",
+    "RelativePath": "api/posts/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -104,7 +239,7 @@
       },
       {
         "Name": "request",
-        "Type": "BlogEngine.Communication.requests.RequestCreatePost",
+        "Type": "BlogEngine.Communication.Requests.Post.RequestCreatePost",
         "IsRequired": true
       }
     ],
