@@ -13,7 +13,7 @@ internal class CategoriesRepository : ICategoryRepository
     }
     public async Task Add(Category category)
     {
-       await _dbContext.AddAsync(category);
+       await _dbContext.Categories.AddAsync(category);
     }
 
     public async Task<List<Category>> GetAll()

@@ -1,10 +1,4 @@
-﻿using BlogEngine.Communication.requests;
-using BlogEngine.Communication.Responses.Post;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BlogEngine.Communication.Responses.Post;
 
 namespace BlogEngine.Application.UseCases.Posts.GetAll;
 public interface IGetAllPostsUseCase
