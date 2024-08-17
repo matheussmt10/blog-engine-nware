@@ -1,6 +1,31 @@
 [
   {
     "ContainingType": "BlogEngine.API.Controllers.CategoriesController",
+    "Method": "GetAll",
+    "RelativePath": "categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "BlogEngine.Communication.Responses.Category.ResponseCategory",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      }
+    ]
+  },
+  {
+    "ContainingType": "BlogEngine.API.Controllers.CategoriesController",
     "Method": "Create",
     "RelativePath": "categories",
     "HttpMethod": "POST",
@@ -22,31 +47,6 @@
           "text/json"
         ],
         "StatusCode": 201
-      }
-    ]
-  },
-  {
-    "ContainingType": "BlogEngine.API.Controllers.CategoriesController",
-    "Method": "GetAll",
-    "RelativePath": "categories",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "BlogEngine.Communication.Responses.Category.ResponseCategory",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 204
       }
     ]
   },
@@ -167,6 +167,31 @@
   },
   {
     "ContainingType": "BlogEngine.API.Controllers.PostsController",
+    "Method": "GetAll",
+    "RelativePath": "posts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "BlogEngine.Communication.Responses.Post.ResponseCreatedPost",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      }
+    ]
+  },
+  {
+    "ContainingType": "BlogEngine.API.Controllers.PostsController",
     "Method": "Create",
     "RelativePath": "posts",
     "HttpMethod": "POST",
@@ -188,31 +213,6 @@
           "text/json"
         ],
         "StatusCode": 201
-      }
-    ]
-  },
-  {
-    "ContainingType": "BlogEngine.API.Controllers.PostsController",
-    "Method": "GetAll",
-    "RelativePath": "posts",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "BlogEngine.Communication.Responses.Post.ResponseCreatedPost",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 204
       }
     ]
   },

@@ -12,17 +12,7 @@ namespace BlogEngine.API.Controllers;
 [ApiController]
 public class PostsController : ControllerBase
 {
-    [HttpPost]
-    [ProducesResponseType(typeof(ResponseCreatedPost), StatusCodes.Status201Created)]
-    public async Task<IActionResult> Create(
-        [FromServices] ICreatePostUseCase useCase,
-        [FromBody] RequestCreatePost request
-        )
-    {
-            var response = await useCase.Execute(request);
 
-            return Created(string.Empty, response);
-    }
 
     [HttpGet]
     [ProducesResponseType(typeof(ResponseCreatedPost), StatusCodes.Status200OK)]
@@ -48,6 +38,18 @@ public class PostsController : ControllerBase
         var response = await useCase.Execute(id);
 
         return Ok(response);
+    }
+
+    [HttpPost]
+    [ProducesResponseType(typeof(ResponseCreatedPost), StatusCodes.Status201Created)]
+    public async Task<IActionResult> Create(
+    [FromServices] ICreatePostUseCase useCase,
+    [FromBody] RequestCreatePost request
+    )
+    {
+        var response = await useCase.Execute(request);
+
+        return Created(string.Empty, response);
     }
 
     [HttpPut]

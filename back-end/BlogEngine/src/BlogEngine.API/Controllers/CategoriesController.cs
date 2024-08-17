@@ -13,17 +13,6 @@ namespace BlogEngine.API.Controllers;
 [ApiController]
 public class CategoriesController : ControllerBase
 {
-    [HttpPost]
-    [ProducesResponseType(typeof(ResponseCategory), StatusCodes.Status201Created)]
-    public async Task<IActionResult> Create(
-    [FromServices] ICreateCategoryUseCase useCase,
-    [FromBody] RequestCategory request
-    )
-    {
-        var response = await useCase.Execute(request);
-
-        return Created(string.Empty, response);
-    }
 
     [HttpGet]
     [ProducesResponseType(typeof(ResponseCategory), StatusCodes.Status200OK)]
@@ -63,6 +52,18 @@ public class CategoriesController : ControllerBase
         var response = await useCase.Execute(id);
 
         return Ok(response);
+    }
+
+    [HttpPost]
+    [ProducesResponseType(typeof(ResponseCategory), StatusCodes.Status201Created)]
+    public async Task<IActionResult> Create(
+    [FromServices] ICreateCategoryUseCase useCase,
+    [FromBody] RequestCategory request
+)
+    {
+        var response = await useCase.Execute(request);
+
+        return Created(string.Empty, response);
     }
 
     [HttpPut]
