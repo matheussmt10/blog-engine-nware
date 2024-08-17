@@ -31,7 +31,9 @@ public class UpdatePostUseCase : IUpdatePostUseCase
 
         _repository.Update(post);
 
-        await _unitOfWork.Commit();
+        var commit = await _unitOfWork.Commit();
+
+        commit.ToString();
 
     }
 

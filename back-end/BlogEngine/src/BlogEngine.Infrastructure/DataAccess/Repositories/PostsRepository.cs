@@ -25,6 +25,13 @@ internal class PostsRepository : IPostsRepository
         return result;
     }
 
+    public async Task<List<Post>> GetAllByCategoryId(Guid categoryId)
+    {
+        var result = await _dbContext.Posts.Where(post => post.CategoryId == categoryId).ToListAsync();
+
+        return result;
+    }
+
     public async Task<Post?> GetById(Guid id)
     {
         var result = await _dbContext.Posts.FirstOrDefaultAsync(post => post.Id == id);

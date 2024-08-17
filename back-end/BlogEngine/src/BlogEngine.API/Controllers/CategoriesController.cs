@@ -2,6 +2,7 @@
 using BlogEngine.Application.UseCases.Categories.GetAll;
 using BlogEngine.Application.UseCases.Categories.GetById;
 using BlogEngine.Application.UseCases.Categories.Update;
+using BlogEngine.Application.UseCases.Posts.GetByCategoryId;
 using BlogEngine.Communication.Requests.Category;
 using BlogEngine.Communication.responses;
 using BlogEngine.Communication.Responses.Category;
@@ -44,6 +45,20 @@ public class CategoriesController : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> GetById(
     [FromServices] IGetCategoryByIdUseCase useCase,
+    [FromRoute] Guid id
+    )
+    {
+        var response = await useCase.Execute(id);
+
+        return Ok(response);
+    }
+
+    [HttpGet]
+    [Route("{id}/posts")]
+    [ProducesResponseType(typeof(ResponseCategory), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> GetAllPostById(
+    [FromServices] IGetAllPostsByCategoryIdUseCase useCase,
     [FromRoute] Guid id
     )
     {

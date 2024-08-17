@@ -88,6 +88,15 @@ namespace BlogEngine.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No posts were found with the given Category ID.
+        /// </summary>
+        public static string POSTS_BY_CATEGORY_ID_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("POSTS_BY_CATEGORY_ID_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Posts cannot be for the future.
         /// </summary>
         public static string POSTS_CANNOT_FOR_THE_FUTURE {

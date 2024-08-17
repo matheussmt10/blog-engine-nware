@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BlogEngine.Communication.Requests.Category;
 using BlogEngine.Communication.Requests.Post;
 using BlogEngine.Communication.Responses.Category;
 using BlogEngine.Communication.Responses.Post;
@@ -16,7 +17,7 @@ public class AutoMapping : Profile
     private void RequestToEntity()
     {
         CreateMap<RequestCreatePost, Post>();
-        CreateMap<ResponseCategory, Category>();
+        CreateMap<RequestCategory, Category>();
     }
 
     private void EntityToResponse()

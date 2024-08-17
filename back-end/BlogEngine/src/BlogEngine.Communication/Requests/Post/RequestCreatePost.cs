@@ -7,4 +7,6 @@ public class RequestCreatePost
     public DateTime PublicationDate { get; set; }
 
     public string Content { get; set; } = string.Empty;
+
+    public Guid CategoryId { get; set; }
 }

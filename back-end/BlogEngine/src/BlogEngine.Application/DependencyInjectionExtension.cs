@@ -5,6 +5,7 @@ using BlogEngine.Application.UseCases.Categories.GetById;
 using BlogEngine.Application.UseCases.Categories.Update;
 using BlogEngine.Application.UseCases.Posts.Create;
 using BlogEngine.Application.UseCases.Posts.GetAll;
+using BlogEngine.Application.UseCases.Posts.GetByCategoryId;
 using BlogEngine.Application.UseCases.Posts.GetById;
 using BlogEngine.Application.UseCases.Posts.Update;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,6 +31,7 @@ public static class DependencyInjectionExtension
         services.AddScoped<ICreatePostUseCase, CreatePostUseCase>();
         services.AddScoped<IGetAllPostsUseCase, GetAllPostsUseCase>();
         services.AddScoped<IGetPostByIdUseCase, GetPostByIdUseCase>();
+        services.AddScoped<IGetAllPostsByCategoryIdUseCase, GetAllPostsByCategoryIdUseCase>();
         services.AddScoped<IUpdatePostUseCase, UpdatePostUseCase>();
 
         services.AddScoped<ICreateCategoryUseCase, CreateCategoryUseCase>();
