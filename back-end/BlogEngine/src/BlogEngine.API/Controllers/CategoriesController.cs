@@ -9,7 +9,7 @@ using BlogEngine.Communication.Responses.Category;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogEngine.API.Controllers;
-[Route("api/[controller]")]
+[Route("[controller]")]
 [ApiController]
 public class CategoriesController : ControllerBase
 {
@@ -27,15 +27,13 @@ public class CategoriesController : ControllerBase
 
     [HttpGet]
     [ProducesResponseType(typeof(ResponseCategory), StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
     public async Task<IActionResult> GetAll(
         [FromServices] IGetAllCategoriesUseCase useCase
         )
     {
         var response = await useCase.Execute();
 
-        if (response.Categories.Count() == 0)
-            return NotFound();
         return Ok(response);
     }
 

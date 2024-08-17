@@ -26,7 +26,7 @@ public class GetAllPostsByCategoryIdUseCase : IGetAllPostsByCategoryIdUseCase
 
         if (result.Count == 0)
         {
-            throw new NotFoundException(ResourceErrorMessages.POSTS_BY_CATEGORY_ID_NOT_FOUND);
+            throw new NoContentException(string.Empty);
         }
 
         return new ResponseCreatedPosts

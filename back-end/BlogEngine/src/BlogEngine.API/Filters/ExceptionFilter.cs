@@ -37,6 +37,11 @@ public class ExceptionFilter : IExceptionFilter
 
             context.Result = new NotFoundObjectResult(errorResponse);
         }
+        else if (context.Exception is NoContentException noContentException)
+        {
+
+            context.Result = new NoContentResult();
+        }
         else
         {
             var errorResponse = new ResponseError(context.Exception.Message);

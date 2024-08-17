@@ -5,12 +5,10 @@ using BlogEngine.Application.UseCases.Posts.Update;
 using BlogEngine.Communication.Requests.Post;
 using BlogEngine.Communication.responses;
 using BlogEngine.Communication.Responses.Post;
-using BlogEngine.Exception.ExceptionBase;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogEngine.API.Controllers;
-[Route("api/[controller]")]
+[Route("[controller]")]
 [ApiController]
 public class PostsController : ControllerBase
 {
@@ -28,15 +26,13 @@ public class PostsController : ControllerBase
 
     [HttpGet]
     [ProducesResponseType(typeof(ResponseCreatedPost), StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
     public async Task<IActionResult> GetAll(
         [FromServices] IGetAllPostsUseCase useCase
         )
     {
         var response = await useCase.Execute();
 
-        if (response.Posts.Count() == 0)
-            return NotFound();
         return Ok(response);
     }
 

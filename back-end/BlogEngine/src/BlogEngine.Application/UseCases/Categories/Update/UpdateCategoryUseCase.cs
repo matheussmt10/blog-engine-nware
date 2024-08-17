@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BlogEngine.Communication.Requests.Category;
 using BlogEngine.Communication.Responses.Category;
+using BlogEngine.Domain.Entities;
 using BlogEngine.Domain.Repositories;
 using BlogEngine.Domain.Repositories.Categories;
 using BlogEngine.Exception;
@@ -31,6 +32,8 @@ public class UpdateCategoryUseCase : IUpdateCategoryUseCase
         }
 
         Validate(request);
+
+        _mapper.Map(request, category);
 
         _repository.Update(category);
 

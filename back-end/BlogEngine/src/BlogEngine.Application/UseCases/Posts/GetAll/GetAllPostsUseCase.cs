@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BlogEngine.Communication.Responses.Post;
 using BlogEngine.Domain.Repositories.Posts;
+using BlogEngine.Exception.ExceptionBase;
 
 namespace BlogEngine.Application.UseCases.Posts.GetAll;
 
@@ -19,6 +20,11 @@ public class GetAllPostsUseCase : IGetAllPostsUseCase
     public async Task<ResponseCreatedPosts> Execute()
     {
         var result = await _repository.GetAll();
+
+        if (result.Count == 0)
+        {
+            throw new NoContentException(string.Empty);
+        }
 
         return new ResponseCreatedPosts
         {

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BlogEngine.Communication.Responses.Category;
 using BlogEngine.Domain.Repositories.Categories;
+using BlogEngine.Exception.ExceptionBase;
 
 namespace BlogEngine.Application.UseCases.Categories.GetAll;
 
@@ -17,6 +18,11 @@ public class GetAllCategoriesUseCase : IGetAllCategoriesUseCase
     public async Task<ResponseCategories> Execute()
     {
         var result = await _repository.GetAll();
+
+        if (result.Count == 0)
+        {
+            throw new NoContentException(string.Empty);
+        }
 
         return new ResponseCategories
         {

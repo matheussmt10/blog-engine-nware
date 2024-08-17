@@ -2,7 +2,7 @@
   {
     "ContainingType": "BlogEngine.API.Controllers.CategoriesController",
     "Method": "Create",
-    "RelativePath": "api/categories",
+    "RelativePath": "categories",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -28,7 +28,7 @@
   {
     "ContainingType": "BlogEngine.API.Controllers.CategoriesController",
     "Method": "GetAll",
-    "RelativePath": "api/categories",
+    "RelativePath": "categories",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -44,20 +44,16 @@
         "StatusCode": 200
       },
       {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
       }
     ]
   },
   {
     "ContainingType": "BlogEngine.API.Controllers.CategoriesController",
     "Method": "GetById",
-    "RelativePath": "api/categories/{id}",
+    "RelativePath": "categories/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -92,7 +88,7 @@
   {
     "ContainingType": "BlogEngine.API.Controllers.CategoriesController",
     "Method": "Update",
-    "RelativePath": "api/categories/{id}",
+    "RelativePath": "categories/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -137,7 +133,7 @@
   {
     "ContainingType": "BlogEngine.API.Controllers.CategoriesController",
     "Method": "GetAllPostById",
-    "RelativePath": "api/categories/{id}/posts",
+    "RelativePath": "categories/{id}/posts",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -172,7 +168,7 @@
   {
     "ContainingType": "BlogEngine.API.Controllers.PostsController",
     "Method": "Create",
-    "RelativePath": "api/posts",
+    "RelativePath": "posts",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -198,7 +194,7 @@
   {
     "ContainingType": "BlogEngine.API.Controllers.PostsController",
     "Method": "GetAll",
-    "RelativePath": "api/posts",
+    "RelativePath": "posts",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -214,20 +210,16 @@
         "StatusCode": 200
       },
       {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 404
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
       }
     ]
   },
   {
     "ContainingType": "BlogEngine.API.Controllers.PostsController",
     "Method": "GetById",
-    "RelativePath": "api/posts/{id}",
+    "RelativePath": "posts/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -262,7 +254,7 @@
   {
     "ContainingType": "BlogEngine.API.Controllers.PostsController",
     "Method": "Update",
-    "RelativePath": "api/posts/{id}",
+    "RelativePath": "posts/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
