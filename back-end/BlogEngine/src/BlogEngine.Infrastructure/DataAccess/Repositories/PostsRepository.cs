@@ -27,8 +27,13 @@ internal class PostsRepository : IPostsRepository
 
     public async Task<Post?> GetById(Guid id)
     {
-        var result = await _dbContext.Posts.AsNoTracking().FirstOrDefaultAsync(post => post.Id == id);
+        var result = await _dbContext.Posts.FirstOrDefaultAsync(post => post.Id == id);
 
         return result;
+    }
+
+    public void Update(Post post)
+    {
+        _dbContext.Posts.Update(post);
     }
 }

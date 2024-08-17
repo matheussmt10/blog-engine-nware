@@ -8,4 +8,6 @@ public interface IPostsRepository
     public Task<List<Post>> GetAll();
 
     Task<Post?> GetById(Guid id);
+
+    void Update(Post post);
 }

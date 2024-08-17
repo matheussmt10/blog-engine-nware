@@ -1,6 +1,7 @@
 ﻿using BlogEngine.Application.UseCases.Posts.Create;
 using BlogEngine.Application.UseCases.Posts.GetAll;
 using BlogEngine.Application.UseCases.Posts.GetById;
+using BlogEngine.Application.UseCases.Posts.Update;
 using BlogEngine.Communication.requests;
 using BlogEngine.Communication.responses;
 using BlogEngine.Exception.ExceptionBase;
@@ -50,5 +51,21 @@ public class PostsController : ControllerBase
         var response = await useCase.Execute(id);
 
         return Ok(response);
+    }
+
+    [HttpPut]
+    [Route("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ResponseError), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ResponseError), StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> Update(
+    [FromServices] IUpdatePostUseCase useCase,
+    [FromRoute] Guid id,
+    [FromBody] RequestCreatePost request
+)
+    {
+        await useCase.Execute(id, request);
+
+        return NoContent();
     }
 }

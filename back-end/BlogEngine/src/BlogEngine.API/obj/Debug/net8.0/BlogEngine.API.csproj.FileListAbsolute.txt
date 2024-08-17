@@ -29,7 +29,6 @@ C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.API\obj\Debug\net8.0
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.API\obj\Debug\net8.0\BlogEngine.API.AssemblyInfoInputs.cache
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.API\obj\Debug\net8.0\BlogEngine.API.AssemblyInfo.cs
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.API\obj\Debug\net8.0\BlogEngine.API.csproj.CoreCompileInputs.cache
-C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.API\obj\Debug\net8.0\BlogEngine.API.MvcApplicationPartsAssemblyInfo.cs
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.API\obj\Debug\net8.0\BlogEngine.API.MvcApplicationPartsAssemblyInfo.cache
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.API\obj\Debug\net8.0\BlogEngine.API.sourcelink.json
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.API\obj\Debug\net8.0\staticwebassets.build.json

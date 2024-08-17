@@ -2,6 +2,7 @@
 using BlogEngine.Application.UseCases.Posts.Create;
 using BlogEngine.Application.UseCases.Posts.GetAll;
 using BlogEngine.Application.UseCases.Posts.GetById;
+using BlogEngine.Application.UseCases.Posts.Update;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BlogEngine.Application;
@@ -25,5 +26,6 @@ public static class DependencyInjectionExtension
         services.AddScoped<ICreatePostUseCase, CreatePostUseCase>();
         services.AddScoped<IGetAllPostsUseCase, GetAllPostsUseCase>();
         services.AddScoped<IGetPostByIdUseCase, GetPostByIdUseCase>();
+        services.AddScoped<IUpdatePostUseCase, UpdatePostUseCase>();
     }
 }

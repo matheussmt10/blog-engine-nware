@@ -2,11 +2,11 @@
 using BlogEngine.Exception;
 using FluentValidation;
 
-namespace BlogEngine.Application.UseCases.Posts.Create;
+namespace BlogEngine.Application.UseCases.Posts;
 
-public class CreatePostValidator : AbstractValidator<RequestCreatePost>
+public class PostValidator : AbstractValidator<RequestCreatePost>
 {
-    public CreatePostValidator()
+    public PostValidator()
     {
         RuleFor(post => post.Title).NotEmpty().WithMessage(ResourceErrorMessages.TITLE_REQUIRED);
         RuleFor(post => post.PublicationDate).LessThanOrEqualTo(DateTime.UtcNow).WithMessage(ResourceErrorMessages.POSTS_CANNOT_FOR_THE_FUTURE);
