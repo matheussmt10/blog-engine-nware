@@ -3,52 +3,28 @@
   "WorkspaceRootPath": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57FDB123-A306-4530-922E-BE1325465C53}|src\\BlogEngine.Application\\BlogEngine.Application.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.application\\usecases\\posts\\icreatepostusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57FDB123-A306-4530-922E-BE1325465C53}|src\\BlogEngine.Application\\BlogEngine.Application.csproj|solutionrelative:src\\blogengine.application\\usecases\\posts\\icreatepostusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{05A60381-3272-4576-8080-F84D041D69AB}|src\\BlogEngine.API\\BlogEngine.API.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.api\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05A60381-3272-4576-8080-F84D041D69AB}|src\\BlogEngine.API\\BlogEngine.API.csproj|solutionrelative:src\\blogengine.api\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57FDB123-A306-4530-922E-BE1325465C53}|src\\BlogEngine.Application\\BlogEngine.Application.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.application\\usecases\\posts\\getallpostsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57FDB123-A306-4530-922E-BE1325465C53}|src\\BlogEngine.Application\\BlogEngine.Application.csproj|solutionrelative:src\\blogengine.application\\usecases\\posts\\getallpostsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05A60381-3272-4576-8080-F84D041D69AB}|src\\BlogEngine.API\\BlogEngine.API.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05A60381-3272-4576-8080-F84D041D69AB}|src\\BlogEngine.API\\BlogEngine.API.csproj|solutionrelative:src\\blogengine.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53044B50-82C4-4238-ACDB-68719270385F}|src\\BlogEngine.Communication\\BlogEngine.Communication.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.communication\\responses\\responsecreatedposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53044B50-82C4-4238-ACDB-68719270385F}|src\\BlogEngine.Communication\\BlogEngine.Communication.csproj|solutionrelative:src\\blogengine.communication\\responses\\responsecreatedposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05A60381-3272-4576-8080-F84D041D69AB}|src\\BlogEngine.API\\BlogEngine.API.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.api\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05A60381-3272-4576-8080-F84D041D69AB}|src\\BlogEngine.API\\BlogEngine.API.csproj|solutionrelative:src\\blogengine.api\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE118B5C-B80D-405C-9FBF-7FF9B4D21780}|src\\BlogEngine.Infrastructure\\BlogEngine.Infrastructure.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.infrastructure\\dataaccess\\repositories\\postsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE118B5C-B80D-405C-9FBF-7FF9B4D21780}|src\\BlogEngine.Infrastructure\\BlogEngine.Infrastructure.csproj|solutionrelative:src\\blogengine.infrastructure\\dataaccess\\repositories\\postsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C11BC538-24E3-48BF-9A37-A11DE52D031B}|src\\BlogEngine.Exception\\BlogEngine.Exception.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.exception\\exceptionbase\\blogengineexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11BC538-24E3-48BF-9A37-A11DE52D031B}|src\\BlogEngine.Exception\\BlogEngine.Exception.csproj|solutionrelative:src\\blogengine.exception\\exceptionbase\\blogengineexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53044B50-82C4-4238-ACDB-68719270385F}|src\\BlogEngine.Communication\\BlogEngine.Communication.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.communication\\responses\\responsecreatedpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53044B50-82C4-4238-ACDB-68719270385F}|src\\BlogEngine.Communication\\BlogEngine.Communication.csproj|solutionrelative:src\\blogengine.communication\\responses\\responsecreatedpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C11BC538-24E3-48BF-9A37-A11DE52D031B}|src\\BlogEngine.Exception\\BlogEngine.Exception.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.exception\\exceptionbase\\erroronvalidationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11BC538-24E3-48BF-9A37-A11DE52D031B}|src\\BlogEngine.Exception\\BlogEngine.Exception.csproj|solutionrelative:src\\blogengine.exception\\exceptionbase\\erroronvalidationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57FDB123-A306-4530-922E-BE1325465C53}|src\\BlogEngine.Application\\BlogEngine.Application.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.application\\usecases\\posts\\createpostusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57FDB123-A306-4530-922E-BE1325465C53}|src\\BlogEngine.Application\\BlogEngine.Application.csproj|solutionrelative:src\\blogengine.application\\usecases\\posts\\createpostusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53044B50-82C4-4238-ACDB-68719270385F}|src\\BlogEngine.Communication\\BlogEngine.Communication.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.communication\\requests\\requestcreatepost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53044B50-82C4-4238-ACDB-68719270385F}|src\\BlogEngine.Communication\\BlogEngine.Communication.csproj|solutionrelative:src\\blogengine.communication\\requests\\requestcreatepost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B316F3C-DC00-4F05-8B2F-DFE8D0CD133D}|src\\BlogEngine.Domain\\BlogEngine.Domain.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.domain\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B316F3C-DC00-4F05-8B2F-DFE8D0CD133D}|src\\BlogEngine.Domain\\BlogEngine.Domain.csproj|solutionrelative:src\\blogengine.domain\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B316F3C-DC00-4F05-8B2F-DFE8D0CD133D}|src\\BlogEngine.Domain\\BlogEngine.Domain.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.domain\\repositories\\posts\\ipostsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B316F3C-DC00-4F05-8B2F-DFE8D0CD133D}|src\\BlogEngine.Domain\\BlogEngine.Domain.csproj|solutionrelative:src\\blogengine.domain\\repositories\\posts\\ipostsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57FDB123-A306-4530-922E-BE1325465C53}|src\\BlogEngine.Application\\BlogEngine.Application.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.application\\usecases\\posts\\igetallpostsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57FDB123-A306-4530-922E-BE1325465C53}|src\\BlogEngine.Application\\BlogEngine.Application.csproj|solutionrelative:src\\blogengine.application\\usecases\\posts\\igetallpostsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57FDB123-A306-4530-922E-BE1325465C53}|src\\BlogEngine.Application\\BlogEngine.Application.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.application\\dependencyinjectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57FDB123-A306-4530-922E-BE1325465C53}|src\\BlogEngine.Application\\BlogEngine.Application.csproj|solutionrelative:src\\blogengine.application\\dependencyinjectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C11BC538-24E3-48BF-9A37-A11DE52D031B}|src\\BlogEngine.Exception\\BlogEngine.Exception.csproj|c:\\dev\\blog-engine-nware\\back-end\\blogengine\\src\\blogengine.exception\\exceptionbase\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11BC538-24E3-48BF-9A37-A11DE52D031B}|src\\BlogEngine.Exception\\BlogEngine.Exception.csproj|solutionrelative:src\\blogengine.exception\\exceptionbase\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,162 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ICreatePostUseCase.cs",
-              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Application\\UseCases\\Posts\\ICreatePostUseCase.cs",
-              "RelativeDocumentMoniker": "src\\BlogEngine.Application\\UseCases\\Posts\\ICreatePostUseCase.cs",
-              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Application\\UseCases\\Posts\\ICreatePostUseCase.cs",
-              "RelativeToolTip": "src\\BlogEngine.Application\\UseCases\\Posts\\ICreatePostUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "BlogEngineException.cs",
+              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Exception\\ExceptionBase\\BlogEngineException.cs",
+              "RelativeDocumentMoniker": "src\\BlogEngine.Exception\\ExceptionBase\\BlogEngineException.cs",
+              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Exception\\ExceptionBase\\BlogEngineException.cs",
+              "RelativeToolTip": "src\\BlogEngine.Exception\\ExceptionBase\\BlogEngineException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T19:13:59.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetAllPostsUseCase.cs",
-              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Application\\UseCases\\Posts\\GetAllPostsUseCase.cs",
-              "RelativeDocumentMoniker": "src\\BlogEngine.Application\\UseCases\\Posts\\GetAllPostsUseCase.cs",
-              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Application\\UseCases\\Posts\\GetAllPostsUseCase.cs",
-              "RelativeToolTip": "src\\BlogEngine.Application\\UseCases\\Posts\\GetAllPostsUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T19:13:50.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ResponseCreatedPost.cs",
-              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Communication\\responses\\ResponseCreatedPost.cs",
-              "RelativeDocumentMoniker": "src\\BlogEngine.Communication\\responses\\ResponseCreatedPost.cs",
-              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Communication\\responses\\ResponseCreatedPost.cs",
-              "RelativeToolTip": "src\\BlogEngine.Communication\\responses\\ResponseCreatedPost.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T20:03:06.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PostsController.cs",
-              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.API\\Controllers\\PostsController.cs",
-              "RelativeDocumentMoniker": "src\\BlogEngine.API\\Controllers\\PostsController.cs",
-              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.API\\Controllers\\PostsController.cs",
-              "RelativeToolTip": "src\\BlogEngine.API\\Controllers\\PostsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T19:06:47.055Z",
+              "WhenOpened": "2024-08-17T00:47:33.886Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PostsRepository.cs",
-              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Infrastructure\\DataAccess\\Repositories\\PostsRepository.cs",
-              "RelativeDocumentMoniker": "src\\BlogEngine.Infrastructure\\DataAccess\\Repositories\\PostsRepository.cs",
-              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Infrastructure\\DataAccess\\Repositories\\PostsRepository.cs",
-              "RelativeToolTip": "src\\BlogEngine.Infrastructure\\DataAccess\\Repositories\\PostsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T19:25:55.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreatePostUseCase.cs",
-              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Application\\UseCases\\Posts\\CreatePostUseCase.cs",
-              "RelativeDocumentMoniker": "src\\BlogEngine.Application\\UseCases\\Posts\\CreatePostUseCase.cs",
-              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Application\\UseCases\\Posts\\CreatePostUseCase.cs",
-              "RelativeToolTip": "src\\BlogEngine.Application\\UseCases\\Posts\\CreatePostUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T19:13:57.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ResponseCreatedPosts.cs",
-              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Communication\\responses\\ResponseCreatedPosts.cs",
-              "RelativeDocumentMoniker": "src\\BlogEngine.Communication\\responses\\ResponseCreatedPosts.cs",
-              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Communication\\responses\\ResponseCreatedPosts.cs",
-              "RelativeToolTip": "src\\BlogEngine.Communication\\responses\\ResponseCreatedPosts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T19:21:55.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Post.cs",
-              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Domain\\Entities\\Post.cs",
-              "RelativeDocumentMoniker": "src\\BlogEngine.Domain\\Entities\\Post.cs",
-              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Domain\\Entities\\Post.cs",
-              "RelativeToolTip": "src\\BlogEngine.Domain\\Entities\\Post.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T19:55:07.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RequestCreatePost.cs",
-              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Communication\\requests\\RequestCreatePost.cs",
-              "RelativeDocumentMoniker": "src\\BlogEngine.Communication\\requests\\RequestCreatePost.cs",
-              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Communication\\requests\\RequestCreatePost.cs",
-              "RelativeToolTip": "src\\BlogEngine.Communication\\requests\\RequestCreatePost.cs",
+              "Title": "ErrorOnValidationException.cs",
+              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Exception\\ExceptionBase\\ErrorOnValidationException.cs",
+              "RelativeDocumentMoniker": "src\\BlogEngine.Exception\\ExceptionBase\\ErrorOnValidationException.cs",
+              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Exception\\ExceptionBase\\ErrorOnValidationException.cs",
+              "RelativeToolTip": "src\\BlogEngine.Exception\\ExceptionBase\\ErrorOnValidationException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T20:04:42.317Z",
+              "WhenOpened": "2024-08-17T00:47:32.604Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IGetAllPostsUseCase.cs",
-              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Application\\UseCases\\Posts\\IGetAllPostsUseCase.cs",
-              "RelativeDocumentMoniker": "src\\BlogEngine.Application\\UseCases\\Posts\\IGetAllPostsUseCase.cs",
-              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Application\\UseCases\\Posts\\IGetAllPostsUseCase.cs",
-              "RelativeToolTip": "src\\BlogEngine.Application\\UseCases\\Posts\\IGetAllPostsUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Exception\\ExceptionBase\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "src\\BlogEngine.Exception\\ExceptionBase\\NotFoundException.cs",
+              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Exception\\ExceptionBase\\NotFoundException.cs",
+              "RelativeToolTip": "src\\BlogEngine.Exception\\ExceptionBase\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T19:14:16.239Z",
+              "WhenOpened": "2024-08-17T00:47:31.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IPostsRepository.cs",
-              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Domain\\Repositories\\Posts\\IPostsRepository.cs",
-              "RelativeDocumentMoniker": "src\\BlogEngine.Domain\\Repositories\\Posts\\IPostsRepository.cs",
-              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Domain\\Repositories\\Posts\\IPostsRepository.cs",
-              "RelativeToolTip": "src\\BlogEngine.Domain\\Repositories\\Posts\\IPostsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ExceptionFilter.cs",
+              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.API\\Filters\\ExceptionFilter.cs",
+              "RelativeDocumentMoniker": "src\\BlogEngine.API\\Filters\\ExceptionFilter.cs",
+              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.API\\Filters\\ExceptionFilter.cs",
+              "RelativeToolTip": "src\\BlogEngine.API\\Filters\\ExceptionFilter.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T19:16:38.637Z",
+              "WhenOpened": "2024-08-17T00:46:15.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DependencyInjectionExtension.cs",
-              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Application\\DependencyInjectionExtension.cs",
-              "RelativeDocumentMoniker": "src\\BlogEngine.Application\\DependencyInjectionExtension.cs",
-              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.Application\\DependencyInjectionExtension.cs",
-              "RelativeToolTip": "src\\BlogEngine.Application\\DependencyInjectionExtension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABCAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\BlogEngine.API\\Program.cs",
+              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.API\\Program.cs",
+              "RelativeToolTip": "src\\BlogEngine.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T19:26:50.779Z",
+              "WhenOpened": "2024-08-17T00:44:24.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PostsController.cs",
+              "DocumentMoniker": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.API\\Controllers\\PostsController.cs",
+              "RelativeDocumentMoniker": "src\\BlogEngine.API\\Controllers\\PostsController.cs",
+              "ToolTip": "C:\\dev\\blog-engine-nware\\back-end\\BlogEngine\\src\\BlogEngine.API\\Controllers\\PostsController.cs",
+              "RelativeToolTip": "src\\BlogEngine.API\\Controllers\\PostsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T00:44:09.318Z",
               "EditorCaption": ""
             }
           ]
