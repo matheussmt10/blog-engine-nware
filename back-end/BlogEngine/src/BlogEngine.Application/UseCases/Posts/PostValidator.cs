@@ -1,4 +1,4 @@
-﻿using BlogEngine.Communication.requests;
+﻿using BlogEngine.Communication.Requests.Post;
 using BlogEngine.Exception;
 using FluentValidation;
 

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BlogEngine.Communication.responses;
+using BlogEngine.Communication.Responses.Post;
 using BlogEngine.Domain.Repositories.Posts;
 
 namespace BlogEngine.Application.UseCases.Posts.GetAll;

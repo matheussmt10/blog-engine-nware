@@ -1,4 +1,5 @@
 ﻿using BlogEngine.Domain.Repositories;
+using BlogEngine.Domain.Repositories.Categories;
 using BlogEngine.Domain.Repositories.Posts;
 using BlogEngine.Infrastructure.DataAccess;
 using BlogEngine.Infrastructure.DataAccess.Repositories;
@@ -20,6 +21,7 @@ public static class DependencyInjectionExtension
     {
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<IPostsRepository, PostsRepository>();
+        services.AddScoped<ICategoryRepository, CategoriesRepository>();
     }  
     
     private static void AddDbContext(IServiceCollection services, IConfiguration configuration)

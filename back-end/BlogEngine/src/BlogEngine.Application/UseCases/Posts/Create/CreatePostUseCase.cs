@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using BlogEngine.Communication.requests;
-using BlogEngine.Communication.responses;
+using BlogEngine.Communication.Requests.Post;
+using BlogEngine.Communication.Responses.Post;
 using BlogEngine.Domain.Entities;
 using BlogEngine.Domain.Repositories;
 using BlogEngine.Domain.Repositories.Posts;

@@ -1,4 +1,4 @@
-﻿using BlogEngine.Communication.requests;
+﻿using BlogEngine.Communication.Requests.Post;
 using BlogEngine.Communication.responses;
 
 namespace BlogEngine.Application.UseCases.Posts.Update;

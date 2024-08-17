@@ -1,4 +1,4 @@
-﻿namespace BlogEngine.Communication.responses
+﻿namespace BlogEngine.Communication.Responses.Post
 {
     public class ResponseCreatedPosts
     {

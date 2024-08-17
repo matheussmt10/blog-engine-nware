@@ -1,5 +1,5 @@
 ﻿using BlogEngine.Communication.requests;
-using BlogEngine.Communication.responses;
+using BlogEngine.Communication.Responses.Post;
 using System;
 using System.Collections.Generic;
 using System.Linq;

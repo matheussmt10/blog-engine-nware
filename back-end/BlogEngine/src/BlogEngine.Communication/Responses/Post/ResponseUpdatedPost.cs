@@ -1,8 +1,7 @@
-﻿namespace BlogEngine.Communication.responses;
+﻿namespace BlogEngine.Communication.Responses.Post;
 
-public class ResponseCreatedPost
+public class ResponseUpdatedPost
 {
-    public Guid Id { get; set; }
 
     public string Title { get; set; } = string.Empty;
 

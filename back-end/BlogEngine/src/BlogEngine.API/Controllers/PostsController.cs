@@ -2,8 +2,9 @@
 using BlogEngine.Application.UseCases.Posts.GetAll;
 using BlogEngine.Application.UseCases.Posts.GetById;
 using BlogEngine.Application.UseCases.Posts.Update;
-using BlogEngine.Communication.requests;
+using BlogEngine.Communication.Requests.Post;
 using BlogEngine.Communication.responses;
+using BlogEngine.Communication.Responses.Post;
 using BlogEngine.Exception.ExceptionBase;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
