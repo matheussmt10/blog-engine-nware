@@ -20,7 +20,7 @@ internal class PostsRepository : IPostsRepository
 
     public async Task<List<Post>> GetAll()
     {
-        var result = await _dbContext.Posts.AsNoTracking().ToListAsync();
+        var result = await _dbContext.Posts.AsNoTracking().OrderByDescending(post => post.PublicationDate).ToListAsync();
 
         return result;
     }
