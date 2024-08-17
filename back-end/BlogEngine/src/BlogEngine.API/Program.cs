@@ -1,6 +1,7 @@
 using BlogEngine.API.Filters;
 using BlogEngine.Application;
 using BlogEngine.Infrastructure;
+using BlogEngine.Infrastructure.Migrations;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -29,4 +30,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+await MigrateDatabase();
+
 app.Run();
+
+
+async Task MigrateDatabase ()
+{
+    await using var scope = app.Services.CreateAsyncScope();
+    await DatabaseMigration.MigrateDatabase(scope.ServiceProvider);
+}

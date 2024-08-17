@@ -11,4 +11,7 @@ public class Post
     public DateTime PublicationDate { get; set; }
 
     public string Content { get; set; } = string.Empty;
+
+    public Guid CategoryId { get; set; }
+    public Category Category { get; set; } = default!;
 }
