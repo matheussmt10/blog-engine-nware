@@ -138,4 +138,7 @@
   <data name="POSTS_BY_CATEGORY_ID_NOT_FOUND" xml:space="preserve">
     <value>No posts were found with the given Category ID</value>
   </data>
+  <data name="PUBLICATION_DATE_REQUIRED" xml:space="preserve">
+    <value>Publication Date is required</value>
+  </data>
 </root>

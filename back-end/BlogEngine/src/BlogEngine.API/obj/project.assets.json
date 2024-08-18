@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AspNetCore.Authentication.ApiKey/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/AspNetCore.Authentication.ApiKey.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AspNetCore.Authentication.ApiKey.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "AutoMapper/13.0.1": {
         "type": "package",
         "dependencies": {
@@ -1044,6 +1060,43 @@
     }
   },
   "libraries": {
+    "AspNetCore.Authentication.ApiKey/8.0.1": {
+      "sha512": "u/WTgciHLgthMdBnOUsijh9HGxMW/6rLcEU/9DEAoS3L9DtqA8PVwmkD+XuZFVd8q3QkJapDaEkXe6fxHR6fcw==",
+      "type": "package",
+      "path": "aspnetcore.authentication.apikey/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "aspnetcore.authentication.apikey.8.0.1.nupkg.sha512",
+        "aspnetcore.authentication.apikey.nuspec",
+        "lib/net461/AspNetCore.Authentication.ApiKey.dll",
+        "lib/net461/AspNetCore.Authentication.ApiKey.pdb",
+        "lib/net461/AspNetCore.Authentication.ApiKey.xml",
+        "lib/net5.0/AspNetCore.Authentication.ApiKey.dll",
+        "lib/net5.0/AspNetCore.Authentication.ApiKey.pdb",
+        "lib/net5.0/AspNetCore.Authentication.ApiKey.xml",
+        "lib/net6.0/AspNetCore.Authentication.ApiKey.dll",
+        "lib/net6.0/AspNetCore.Authentication.ApiKey.pdb",
+        "lib/net6.0/AspNetCore.Authentication.ApiKey.xml",
+        "lib/net7.0/AspNetCore.Authentication.ApiKey.dll",
+        "lib/net7.0/AspNetCore.Authentication.ApiKey.pdb",
+        "lib/net7.0/AspNetCore.Authentication.ApiKey.xml",
+        "lib/net8.0/AspNetCore.Authentication.ApiKey.dll",
+        "lib/net8.0/AspNetCore.Authentication.ApiKey.pdb",
+        "lib/net8.0/AspNetCore.Authentication.ApiKey.xml",
+        "lib/netcoreapp3.0/AspNetCore.Authentication.ApiKey.dll",
+        "lib/netcoreapp3.0/AspNetCore.Authentication.ApiKey.pdb",
+        "lib/netcoreapp3.0/AspNetCore.Authentication.ApiKey.xml",
+        "lib/netcoreapp3.1/AspNetCore.Authentication.ApiKey.dll",
+        "lib/netcoreapp3.1/AspNetCore.Authentication.ApiKey.pdb",
+        "lib/netcoreapp3.1/AspNetCore.Authentication.ApiKey.xml",
+        "lib/netstandard2.0/AspNetCore.Authentication.ApiKey.dll",
+        "lib/netstandard2.0/AspNetCore.Authentication.ApiKey.pdb",
+        "lib/netstandard2.0/AspNetCore.Authentication.ApiKey.xml"
+      ]
+    },
     "AutoMapper/13.0.1": {
       "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
       "type": "package",
@@ -2834,6 +2887,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "AspNetCore.Authentication.ApiKey >= 8.0.1",
       "BlogEngine.Application >= 1.0.0",
       "BlogEngine.Communication >= 1.0.0",
       "BlogEngine.Exception >= 1.0.0",
@@ -2905,6 +2959,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "AspNetCore.Authentication.ApiKey": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

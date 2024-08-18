@@ -106,6 +106,15 @@ namespace BlogEngine.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Publication Date is required.
+        /// </summary>
+        public static string PUBLICATION_DATE_REQUIRED {
+            get {
+                return ResourceManager.GetString("PUBLICATION_DATE_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The title is required.
         /// </summary>
         public static string TITLE_REQUIRED {
