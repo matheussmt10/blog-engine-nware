@@ -1,8 +1,8 @@
 ﻿namespace BlogEngine.Communication.Responses.Post;
 
-public class ResponseCreatedPost
+public class ResponsePost
 {
-    public Guid Id { get; set; }
+    public long Id { get; set; }
 
     public string Title { get; set; } = string.Empty;
 

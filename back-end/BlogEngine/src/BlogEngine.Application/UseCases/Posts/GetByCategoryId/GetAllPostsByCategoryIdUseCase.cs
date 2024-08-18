@@ -20,7 +20,7 @@ public class GetAllPostsByCategoryIdUseCase : IGetAllPostsByCategoryIdUseCase
         _mapper = mapper;
     }
 
-    public async Task<ResponseCreatedPosts> Execute(Guid categoryId)
+    public async Task<ResponsePosts> Execute(long categoryId)
     {
         var result = await _repository.GetAllByCategoryId(categoryId);
 
@@ -29,9 +29,9 @@ public class GetAllPostsByCategoryIdUseCase : IGetAllPostsByCategoryIdUseCase
             throw new NoContentException(string.Empty);
         }
 
-        return new ResponseCreatedPosts
+        return new ResponsePosts
         {
-            Posts = _mapper.Map<List<ResponseCreatedPost>>(result)
+            Posts = _mapper.Map<List<ResponsePost>>(result)
         };
     }
 }

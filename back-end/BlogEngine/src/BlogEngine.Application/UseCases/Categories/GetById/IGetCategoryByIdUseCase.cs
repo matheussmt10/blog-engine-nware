@@ -3,5 +3,5 @@
 namespace BlogEngine.Application.UseCases.Categories.GetById;
 public interface IGetCategoryByIdUseCase
 {
-    public Task<ResponseCategory> Execute(Guid id);
+    public Task<ResponseCategory> Execute(long id);
 }

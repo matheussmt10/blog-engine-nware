@@ -29,7 +29,7 @@ public class CreatePostUseCase : ICreatePostUseCase
         _getCategoryByIdUseCase = getCategoryByIdUseCase;
 
     }
-    public async Task<ResponseCreatedPost> Execute(RequestCreatePost request)
+    public async Task<ResponsePost> Execute(RequestCreatePost request)
     {
         Validate(request);
         var idCategoryExist = await _getCategoryByIdUseCase.Execute(request.CategoryId);
@@ -44,7 +44,7 @@ public class CreatePostUseCase : ICreatePostUseCase
 
         await _unitOfWork.Commit();
 
-        return _mapper.Map<ResponseCreatedPost>(post);
+        return _mapper.Map<ResponsePost>(post);
     }
 
     private void Validate(RequestCreatePost request)

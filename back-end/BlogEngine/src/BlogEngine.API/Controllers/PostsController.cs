@@ -15,7 +15,7 @@ public class PostsController : ControllerBase
 
 
     [HttpGet]
-    [ProducesResponseType(typeof(ResponseCreatedPost), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ResponsePost), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     public async Task<IActionResult> GetAll(
         [FromServices] IGetAllPostsUseCase useCase
@@ -28,11 +28,11 @@ public class PostsController : ControllerBase
 
     [HttpGet]
     [Route("{id}")]
-    [ProducesResponseType(typeof(ResponseCreatedPost), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ResponsePost), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> GetById(
     [FromServices] IGetPostByIdUseCase useCase,
-    [FromRoute] Guid id
+    [FromRoute] long id
     )
     {
         var response = await useCase.Execute(id);
@@ -41,7 +41,7 @@ public class PostsController : ControllerBase
     }
 
     [HttpPost]
-    [ProducesResponseType(typeof(ResponseCreatedPost), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ResponsePost), StatusCodes.Status201Created)]
     public async Task<IActionResult> Create(
     [FromServices] ICreatePostUseCase useCase,
     [FromBody] RequestCreatePost request
@@ -59,7 +59,7 @@ public class PostsController : ControllerBase
     [ProducesResponseType(typeof(ResponseError), StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Update(
     [FromServices] IUpdatePostUseCase useCase,
-    [FromRoute] Guid id,
+    [FromRoute] long id,
     [FromBody] RequestCreatePost request
 )
     {

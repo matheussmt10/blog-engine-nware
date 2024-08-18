@@ -3,5 +3,5 @@
 namespace BlogEngine.Application.UseCases.Posts.GetByCategoryId;
 public interface IGetAllPostsByCategoryIdUseCase
 {
-    public Task<ResponseCreatedPosts> Execute(Guid id);
+    public Task<ResponsePosts> Execute(long id);
 }

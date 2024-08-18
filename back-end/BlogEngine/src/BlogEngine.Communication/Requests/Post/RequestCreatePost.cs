@@ -8,5 +8,5 @@ public class RequestCreatePost
 
     public string Content { get; set; } = string.Empty;
 
-    public Guid CategoryId { get; set; }
+    public long CategoryId { get; set; }
 }

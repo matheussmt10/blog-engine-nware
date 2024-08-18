@@ -5,7 +5,7 @@ public interface ICategoryRepository
 {
     public Task<List<Category>> GetAll();
 
-    Task<Category?> GetById(Guid id);
+    Task<Category?> GetById(long id);
 
     public Task Add(Category category);
 

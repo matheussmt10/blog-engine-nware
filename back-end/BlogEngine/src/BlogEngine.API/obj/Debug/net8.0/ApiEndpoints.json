@@ -60,7 +60,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Guid",
+        "Type": "System.Int64",
         "IsRequired": true
       }
     ],
@@ -95,7 +95,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Guid",
+        "Type": "System.Int64",
         "IsRequired": true
       },
       {
@@ -140,7 +140,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Guid",
+        "Type": "System.Int64",
         "IsRequired": true
       }
     ],
@@ -175,7 +175,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "BlogEngine.Communication.Responses.Post.ResponseCreatedPost",
+        "Type": "BlogEngine.Communication.Responses.Post.ResponsePost",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -206,7 +206,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BlogEngine.Communication.Responses.Post.ResponseCreatedPost",
+        "Type": "BlogEngine.Communication.Responses.Post.ResponsePost",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -226,13 +226,13 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Guid",
+        "Type": "System.Int64",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "BlogEngine.Communication.Responses.Post.ResponseCreatedPost",
+        "Type": "BlogEngine.Communication.Responses.Post.ResponsePost",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -261,7 +261,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Guid",
+        "Type": "System.Int64",
         "IsRequired": true
       },
       {

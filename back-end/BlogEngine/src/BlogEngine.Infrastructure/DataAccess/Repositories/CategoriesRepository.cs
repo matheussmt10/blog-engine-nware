@@ -23,7 +23,7 @@ internal class CategoriesRepository : ICategoryRepository
         return result;
     }
 
-    public async Task<Category?> GetById(Guid id)
+    public async Task<Category?> GetById(long id)
     {
         var result = await _dbContext.Categories.FirstOrDefaultAsync(category => category.Id == id);
 

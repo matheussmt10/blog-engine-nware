@@ -22,7 +22,7 @@ public class AutoMapping : Profile
 
     private void EntityToResponse()
     {
-        CreateMap<Post, ResponseCreatedPost>();
+        CreateMap<Post, ResponsePost>();
         CreateMap<Category, ResponseCategory>();
     }
 

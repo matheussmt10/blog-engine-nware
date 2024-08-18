@@ -16,7 +16,7 @@ public class GetCategoryByIdUseCase : IGetCategoryByIdUseCase
         _repository = repository; 
         _mapper = mapper;
     }
-    public async Task<ResponseCategory> Execute(Guid id)
+    public async Task<ResponseCategory> Execute(long id)
     {
         var category = await _repository.GetById(id);
 

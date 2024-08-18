@@ -25,14 +25,14 @@ internal class PostsRepository : IPostsRepository
         return result;
     }
 
-    public async Task<List<Post>> GetAllByCategoryId(Guid categoryId)
+    public async Task<List<Post>> GetAllByCategoryId(long categoryId)
     {
         var result = await _dbContext.Posts.Where(post => post.CategoryId == categoryId).ToListAsync();
 
         return result;
     }
 
-    public async Task<Post?> GetById(Guid id)
+    public async Task<Post?> GetById(long id)
     {
         var result = await _dbContext.Posts.FirstOrDefaultAsync(post => post.Id == id);
 

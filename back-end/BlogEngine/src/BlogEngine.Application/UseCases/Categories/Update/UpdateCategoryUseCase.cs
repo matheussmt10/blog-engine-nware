@@ -22,7 +22,7 @@ public class UpdateCategoryUseCase : IUpdateCategoryUseCase
         _unitOfWork = unitOfWork;
     }
 
-    public async Task Execute(Guid id, RequestCategory request)
+    public async Task Execute(long id, RequestCategory request)
     {
         var category = await _repository.GetById(id);
 

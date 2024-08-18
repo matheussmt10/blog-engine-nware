@@ -141,4 +141,7 @@
   <data name="PUBLICATION_DATE_REQUIRED" xml:space="preserve">
     <value>Publication Date is required</value>
   </data>
+  <data name="CATEGORY_ID_REQUIRED" xml:space="preserve">
+    <value>Category ID is required</value>
+  </data>
 </root>

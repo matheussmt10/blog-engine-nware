@@ -18,7 +18,7 @@ public class GetPostByIdUseCase : IGetPostByIdUseCase
         _repository = repository;
         _mapper = mapper;
     }
-    public async Task<ResponseCreatedPost> Execute(Guid id)
+    public async Task<ResponsePost> Execute(long id)
     {
         var result = await _repository.GetById(id);
 
@@ -27,6 +27,6 @@ public class GetPostByIdUseCase : IGetPostByIdUseCase
             throw new NotFoundException(ResourceErrorMessages.POST_NOT_FOUND);
         }
 
-        return _mapper.Map<ResponseCreatedPost>(result);
+        return _mapper.Map<ResponsePost>(result);
     }
 }

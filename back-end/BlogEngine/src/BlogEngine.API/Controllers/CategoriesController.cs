@@ -32,7 +32,7 @@ public class CategoriesController : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> GetById(
     [FromServices] IGetCategoryByIdUseCase useCase,
-    [FromRoute] Guid id
+    [FromRoute] long id
     )
     {
         var response = await useCase.Execute(id);
@@ -46,7 +46,7 @@ public class CategoriesController : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> GetAllPostById(
     [FromServices] IGetAllPostsByCategoryIdUseCase useCase,
-    [FromRoute] Guid id
+    [FromRoute] long id
     )
     {
         var response = await useCase.Execute(id);
@@ -73,7 +73,7 @@ public class CategoriesController : ControllerBase
     [ProducesResponseType(typeof(ResponseError), StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Update(
     [FromServices] IUpdateCategoryUseCase useCase,
-    [FromRoute] Guid id,
+    [FromRoute] long id,
     [FromBody] RequestCategory request
 )
     {

@@ -17,7 +17,7 @@ public class GetAllPostsUseCase : IGetAllPostsUseCase
         _repository = repository;
         _mapper = mapper;
     }
-    public async Task<ResponseCreatedPosts> Execute()
+    public async Task<ResponsePosts> Execute()
     {
         var result = await _repository.GetAll();
 
@@ -26,9 +26,9 @@ public class GetAllPostsUseCase : IGetAllPostsUseCase
             throw new NoContentException(string.Empty);
         }
 
-        return new ResponseCreatedPosts
+        return new ResponsePosts
         {
-            Posts = _mapper.Map<List<ResponseCreatedPost>>(result)
+            Posts = _mapper.Map<List<ResponsePost>>(result)
         };
     }
 }

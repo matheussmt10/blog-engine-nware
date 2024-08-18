@@ -3,5 +3,5 @@
 namespace BlogEngine.Application.UseCases.Posts.GetAll;
 public interface IGetAllPostsUseCase
 {
-    public Task<ResponseCreatedPosts> Execute();
+    public Task<ResponsePosts> Execute();
 }

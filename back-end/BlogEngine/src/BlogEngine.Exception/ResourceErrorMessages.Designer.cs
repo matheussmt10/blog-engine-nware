@@ -61,6 +61,15 @@ namespace BlogEngine.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Category ID is required.
+        /// </summary>
+        public static string CATEGORY_ID_REQUIRED {
+            get {
+                return ResourceManager.GetString("CATEGORY_ID_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Category not found.
         /// </summary>
         public static string CATEGORY_NOT_FOUND {

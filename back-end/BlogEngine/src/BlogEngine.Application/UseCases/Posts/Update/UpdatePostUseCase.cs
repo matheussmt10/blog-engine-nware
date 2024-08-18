@@ -19,7 +19,7 @@ public class UpdatePostUseCase : IUpdatePostUseCase
         _mapper = mapper;
         _repository = repository;
     }
-    public async Task Execute(Guid id, RequestCreatePost request)
+    public async Task Execute(long id, RequestCreatePost request)
     {
         Validate(request);
         var post = await _repository.GetById(id);

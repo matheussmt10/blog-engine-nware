@@ -6,9 +6,9 @@ public interface IPostsRepository
     public Task Add(Post post);
 
     public Task<List<Post>> GetAll();
-    Task<List<Post>> GetAllByCategoryId(Guid categoryId);
+    Task<List<Post>> GetAllByCategoryId(long categoryId);
 
-    Task<Post?> GetById(Guid id);
+    Task<Post?> GetById(long id);
 
     void Update(Post post);
 }
