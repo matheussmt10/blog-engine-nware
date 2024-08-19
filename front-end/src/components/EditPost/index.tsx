@@ -12,7 +12,12 @@ interface EditPostProps {
   postToEdit: PostResponse;
 }
 
-const EditPost: React.FC<EditPostProps> = ({ show, handleClose, onSuccess, postToEdit }) => {
+const EditPost: React.FC<EditPostProps> = ({
+  show,
+  handleClose,
+  onSuccess,
+  postToEdit,
+}) => {
   const [categories, setCategories] = useState<Category[]>([]);
   const [title, setTitle] = useState('');
   const [categoryId, setCategoryId] = useState<number | ''>('');
@@ -47,7 +52,9 @@ const EditPost: React.FC<EditPostProps> = ({ show, handleClose, onSuccess, postT
         const data = await getCategories();
         setCategories(data);
       } catch (error: unknown) {
-        setErrorMessages([error instanceof Error ? error.message : 'Error fetching categories']);
+        setErrorMessages([
+          error instanceof Error ? error.message : 'Error fetching categories',
+        ]);
         setShowAlert(true);
       }
     };
@@ -78,7 +85,9 @@ const EditPost: React.FC<EditPostProps> = ({ show, handleClose, onSuccess, postT
         handleClose();
       } catch (error) {
         if (error instanceof AxiosError) {
-          const messages = error.response?.data?.errorMessages || [error.message];
+          const messages = error.response?.data?.errorMessages || [
+            error.message,
+          ];
           setErrorMessages(Array.isArray(messages) ? messages : [messages]);
         } else {
           setErrorMessages(['An unexpected error occurred.']);
@@ -172,7 +181,11 @@ const EditPost: React.FC<EditPostProps> = ({ show, handleClose, onSuccess, postT
           </Form.Group>
 
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose} disabled={isLoading}>
+            <Button
+              variant="secondary"
+              onClick={handleClose}
+              disabled={isLoading}
+            >
               Close
             </Button>
             <Button variant="primary" type="submit" disabled={isLoading}>

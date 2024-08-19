@@ -14,17 +14,25 @@ export const getCategoryById = async (id: number) => {
 };
 
 export const createCategory = async (title: string) => {
-  await axios.post(`${API_URL}/categories`, {title}, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-}
+  await axios.post(
+    `${API_URL}/categories`,
+    { title },
+    {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+  );
+};
 
 export const updateCategory = async (id: number, title: string) => {
-  await axios.put(`${API_URL}/categories/${id}`, {title}, {
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
-}
+  await axios.put(
+    `${API_URL}/categories/${id}`,
+    { title },
+    {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+  );
+};

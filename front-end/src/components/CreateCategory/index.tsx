@@ -9,7 +9,11 @@ interface CategoryModalProps {
   onSuccess: (message: string) => void;
 }
 
-const CreateCategory: React.FC<CategoryModalProps> = ({ show, handleClose, onSuccess }) => {
+const CreateCategory: React.FC<CategoryModalProps> = ({
+  show,
+  handleClose,
+  onSuccess,
+}) => {
   const [title, setTitle] = useState('');
   const [validated, setValidated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
@@ -70,8 +74,8 @@ const CreateCategory: React.FC<CategoryModalProps> = ({ show, handleClose, onSuc
       </Modal.Header>
       <Modal.Body>
         {showAlert && errorMessages.length > 0 && (
-          <Alert variant="danger" className='d-flex justify-content-center'>
-            <ul className='mt-3'>
+          <Alert variant="danger" className="d-flex justify-content-center">
+            <ul className="mt-3">
               {errorMessages.map((msg, index) => (
                 <li key={index}>{msg}</li>
               ))}
@@ -94,7 +98,11 @@ const CreateCategory: React.FC<CategoryModalProps> = ({ show, handleClose, onSuc
           </Form.Group>
 
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose} disabled={isLoading}>
+            <Button
+              variant="secondary"
+              onClick={handleClose}
+              disabled={isLoading}
+            >
               Close
             </Button>
             <Button variant="primary" type="submit" disabled={isLoading}>

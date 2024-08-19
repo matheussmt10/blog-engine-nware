@@ -11,7 +11,11 @@ interface CreatePostProps {
   onSuccess: (message: string) => void;
 }
 
-const CreatePost: React.FC<CreatePostProps> = ({ show, handleClose, onSuccess }) => {
+const CreatePost: React.FC<CreatePostProps> = ({
+  show,
+  handleClose,
+  onSuccess,
+}) => {
   const [categories, setCategories] = useState<Category[]>([]);
   const [title, setTitle] = useState('');
   const [categoryId, setCategoryId] = useState<number | ''>('');
@@ -28,7 +32,9 @@ const CreatePost: React.FC<CreatePostProps> = ({ show, handleClose, onSuccess })
         const data = await getCategories();
         setCategories(data);
       } catch (error: unknown) {
-        setErrorMessages([error instanceof Error ? error.message : 'Error fetching categories']);
+        setErrorMessages([
+          error instanceof Error ? error.message : 'Error fetching categories',
+        ]);
         setShowAlert(true);
       }
     };
@@ -100,8 +106,8 @@ const CreatePost: React.FC<CreatePostProps> = ({ show, handleClose, onSuccess })
       </Modal.Header>
       <Modal.Body>
         {showAlert && errorMessages.length > 0 && (
-          <Alert variant="danger" className='d-flex justify-content-center'>
-            <ul className='mt-3'>
+          <Alert variant="danger" className="d-flex justify-content-center">
+            <ul className="mt-3">
               {errorMessages.map((msg, index) => (
                 <li key={index}>{msg}</li>
               ))}
@@ -173,7 +179,11 @@ const CreatePost: React.FC<CreatePostProps> = ({ show, handleClose, onSuccess })
           </Form.Group>
 
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose} disabled={isLoading}>
+            <Button
+              variant="secondary"
+              onClick={handleClose}
+              disabled={isLoading}
+            >
               Close
             </Button>
             <Button variant="primary" type="submit" disabled={isLoading}>

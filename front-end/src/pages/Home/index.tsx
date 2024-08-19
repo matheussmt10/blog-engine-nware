@@ -1,5 +1,12 @@
 import { useState, useEffect, useCallback } from 'react';
-import { Button, Card, Container, ListGroup, Alert, Spinner } from 'react-bootstrap';
+import {
+  Button,
+  Card,
+  Container,
+  ListGroup,
+  Alert,
+  Spinner,
+} from 'react-bootstrap';
 import CreateCategory from '../../components/CreateCategory';
 import CreatePost from '../../components/CreatePost';
 import EditPost from '../../components/EditPost';
@@ -22,8 +29,12 @@ const Home: React.FC = () => {
   const [isLoadingPosts, setIsLoadingPosts] = useState(false);
   const [errorMessages, setErrorMessages] = useState<string[]>([]);
   const [showAlert, setShowAlert] = useState(false);
-  const [postToEdit, setPostToEdit] = useState<PostResponse | undefined>(undefined);
-  const [categoryToEdit, setCategoryToEdit] = useState<Category | undefined>(undefined);
+  const [postToEdit, setPostToEdit] = useState<PostResponse | undefined>(
+    undefined
+  );
+  const [categoryToEdit, setCategoryToEdit] = useState<Category | undefined>(
+    undefined
+  );
 
   const loadCategories = useCallback(async () => {
     setIsLoadingCategories(true);
@@ -31,7 +42,9 @@ const Home: React.FC = () => {
       const data = await getCategories();
       setCategories(data || []);
     } catch (error) {
-      setErrorMessages([error instanceof Error ? error.message : 'Error loading categories']);
+      setErrorMessages([
+        error instanceof Error ? error.message : 'Error loading categories',
+      ]);
       setShowAlert(true);
       setCategories([]);
     } finally {
@@ -45,7 +58,9 @@ const Home: React.FC = () => {
       const data = await getPosts();
       setPosts(data?.posts || []);
     } catch (error) {
-      setErrorMessages([error instanceof Error ? error.message : 'Error loading posts']);
+      setErrorMessages([
+        error instanceof Error ? error.message : 'Error loading posts',
+      ]);
       setShowAlert(true);
       setPosts([]);
     } finally {
@@ -98,8 +113,11 @@ const Home: React.FC = () => {
   return (
     <Container className="d-flex flex-column gap-5 mt-5">
       {showAlert && errorMessages.length > 0 && (
-        <Container className='w-25 align-items-center'>
-          <Alert variant="danger" className='d-flex justify-content-center mt-3'>
+        <Container className="w-25 align-items-center">
+          <Alert
+            variant="danger"
+            className="d-flex justify-content-center mt-3"
+          >
             {errorMessages.map((msg, index) => (
               <div key={index}>{msg}</div>
             ))}
@@ -110,7 +128,11 @@ const Home: React.FC = () => {
       <Container id="category_category" className="d-flex flex-column gap-5">
         <Container className="d-flex gap-5">
           <h1>Categories</h1>
-          <Button variant="primary" onClick={handleShowCreateCategory} className="align-content-center">
+          <Button
+            variant="primary"
+            onClick={handleShowCreateCategory}
+            className="align-content-center"
+          >
             Add
           </Button>
         </Container>
@@ -142,7 +164,11 @@ const Home: React.FC = () => {
       <Container id="category_post" className="d-flex flex-column gap-5">
         <Container className="d-flex gap-5">
           <h1>Posts</h1>
-          <Button variant="primary" onClick={handleShowCreatePost} className="align-content-center">
+          <Button
+            variant="primary"
+            onClick={handleShowCreatePost}
+            className="align-content-center"
+          >
             Add
           </Button>
         </Container>
@@ -182,19 +208,23 @@ const Home: React.FC = () => {
         onSuccess={handleShowSuccess}
       />
       <EditPost
-        show={showEditPost && postToEdit !== undefined} 
+        show={showEditPost && postToEdit !== undefined}
         handleClose={handleCloseEditPost}
         onSuccess={handleShowSuccess}
         postToEdit={postToEdit!}
       />
       <EditCategory
-        show={showEditCategory && categoryToEdit !== undefined} 
+        show={showEditCategory && categoryToEdit !== undefined}
         handleClose={handleCloseEditCategory}
         onSuccess={handleShowSuccess}
         categoryToEdit={categoryToEdit!}
       />
 
-      <SuccessModal show={showSuccess} message={successMessage} handleClose={handleCloseSuccess} />
+      <SuccessModal
+        show={showSuccess}
+        message={successMessage}
+        handleClose={handleCloseSuccess}
+      />
     </Container>
   );
 };

@@ -11,9 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
-
 
 a {
   font-weight: 500;
@@ -35,7 +33,6 @@ body {
 #root {
   width: 100vw;
   height: 100vh;
-
 }
 
 h1 {

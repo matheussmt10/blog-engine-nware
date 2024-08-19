@@ -11,7 +11,12 @@ interface EditCategoryProps {
   categoryToEdit: Category;
 }
 
-const EditCategory: React.FC<EditCategoryProps> = ({ show, handleClose, onSuccess, categoryToEdit }) => {
+const EditCategory: React.FC<EditCategoryProps> = ({
+  show,
+  handleClose,
+  onSuccess,
+  categoryToEdit,
+}) => {
   const [title, setTitle] = useState('');
   const [validated, setValidated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
@@ -96,7 +101,11 @@ const EditCategory: React.FC<EditCategoryProps> = ({ show, handleClose, onSucces
             </Form.Control.Feedback>
           </Form.Group>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose} disabled={isLoading}>
+            <Button
+              variant="secondary"
+              onClick={handleClose}
+              disabled={isLoading}
+            >
               Close
             </Button>
             <Button variant="primary" type="submit" disabled={isLoading}>
