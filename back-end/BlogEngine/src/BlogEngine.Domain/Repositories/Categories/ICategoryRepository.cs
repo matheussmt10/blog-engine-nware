@@ -12,4 +12,6 @@ public interface ICategoryRepository
     public Task Add(Category category);
 
     void Update(Category category);
+
+    Task<bool> Delete(long id);
 }

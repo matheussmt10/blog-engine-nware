@@ -13,4 +13,6 @@ public interface IPostsRepository
     Task<Post?> GetById(long id);
 
     void Update(Post post);
+
+    Task<bool> Delete(long id);
 }

@@ -1,4 +1,5 @@
 ﻿using BlogEngine.Application.UseCases.Posts.Create;
+using BlogEngine.Application.UseCases.Posts.Delete;
 using BlogEngine.Application.UseCases.Posts.GetAll;
 using BlogEngine.Application.UseCases.Posts.GetById;
 using BlogEngine.Application.UseCases.Posts.Update;
@@ -44,7 +45,7 @@ public class PostsController : ControllerBase
     [ProducesResponseType(typeof(ResponsePost), StatusCodes.Status201Created)]
     public async Task<IActionResult> Create(
     [FromServices] ICreatePostUseCase useCase,
-    [FromBody] RequestCreatePost request
+    [FromBody] RequestPost request
     )
     {
         var response = await useCase.Execute(request);
@@ -60,10 +61,25 @@ public class PostsController : ControllerBase
     public async Task<IActionResult> Update(
     [FromServices] IUpdatePostUseCase useCase,
     [FromRoute] long id,
-    [FromBody] RequestCreatePost request
+    [FromBody] RequestPost request
 )
     {
         await useCase.Execute(id, request);
+
+        return NoContent();
+    }
+
+    [HttpDelete]
+    [Route("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ResponseError), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ResponseError), StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> Delete(
+    [FromServices] IDeletePostUseCase useCase,
+    [FromRoute] long id
+)
+    {
+        await useCase.Execute(id);
 
         return NoContent();
     }

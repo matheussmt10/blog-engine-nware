@@ -29,7 +29,7 @@ public class CreatePostUseCase : ICreatePostUseCase
         _getCategoryByIdUseCase = getCategoryByIdUseCase;
 
     }
-    public async Task<ResponsePost> Execute(RequestCreatePost request)
+    public async Task<ResponsePost> Execute(RequestPost request)
     {
         Validate(request);
 
@@ -54,7 +54,7 @@ public class CreatePostUseCase : ICreatePostUseCase
         return _mapper.Map<ResponsePost>(post);
     }
 
-    private void Validate(RequestCreatePost request)
+    private void Validate(RequestPost request)
     {
         var validator = new PostValidator();
 

@@ -16,7 +16,7 @@ public class AutoMapping : Profile
 
     private void RequestToEntity()
     {
-        CreateMap<RequestCreatePost, Post>();
+        CreateMap<RequestPost, Post>();
         CreateMap<RequestCategory, Category>();
     }
 

@@ -41,4 +41,17 @@ internal class CategoriesRepository : ICategoryRepository
     {
         _dbContext.Categories.Update(category);
     }
+
+    public async Task<bool> Delete(long id)
+    {
+        var result = await _dbContext.Categories.FirstOrDefaultAsync(category => category.Id == id);
+
+        if (result is null)
+        {
+            return false;
+        }
+        _dbContext.Categories.Remove(result);
+
+        return true;
+    }
 }

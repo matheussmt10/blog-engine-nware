@@ -1,4 +1,5 @@
 ﻿using BlogEngine.Application.UseCases.Categories.Create;
+using BlogEngine.Application.UseCases.Categories.Delete;
 using BlogEngine.Application.UseCases.Categories.GetAll;
 using BlogEngine.Application.UseCases.Categories.GetById;
 using BlogEngine.Application.UseCases.Categories.Update;
@@ -78,6 +79,21 @@ public class CategoriesController : ControllerBase
 )
     {
         await useCase.Execute(id, request);
+
+        return NoContent();
+    }
+
+    [HttpDelete]
+    [Route("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ResponseError), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ResponseError), StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> Delete(
+    [FromServices] IDeleteCategoryUseCase useCase,
+    [FromRoute] long id
+)
+    {
+        await useCase.Execute(id);
 
         return NoContent();
     }

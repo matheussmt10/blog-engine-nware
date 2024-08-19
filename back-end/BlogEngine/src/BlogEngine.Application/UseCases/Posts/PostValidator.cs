@@ -4,7 +4,7 @@ using FluentValidation;
 
 namespace BlogEngine.Application.UseCases.Posts;
 
-public class PostValidator : AbstractValidator<RequestCreatePost>
+public class PostValidator : AbstractValidator<RequestPost>
 {
     public PostValidator()
     {

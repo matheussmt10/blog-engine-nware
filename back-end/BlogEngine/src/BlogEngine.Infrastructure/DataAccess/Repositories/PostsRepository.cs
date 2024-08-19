@@ -50,4 +50,17 @@ internal class PostsRepository : IPostsRepository
     {
         _dbContext.Posts.Update(post);
     }
+
+    public async Task<bool> Delete(long id)
+    {
+        var result = await _dbContext.Posts.FirstOrDefaultAsync(post => post.Id == id);
+
+        if (result is null)
+        {
+            return false;
+        }
+        _dbContext.Posts.Remove(result);
+
+        return true;
+    }
 }

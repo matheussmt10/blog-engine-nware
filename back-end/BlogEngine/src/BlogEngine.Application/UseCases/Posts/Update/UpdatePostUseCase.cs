@@ -19,7 +19,7 @@ public class UpdatePostUseCase : IUpdatePostUseCase
         _mapper = mapper;
         _repository = repository;
     }
-    public async Task Execute(long id, RequestCreatePost request)
+    public async Task Execute(long id, RequestPost request)
     {
         Validate(request);
 
@@ -36,7 +36,7 @@ public class UpdatePostUseCase : IUpdatePostUseCase
         await _unitOfWork.Commit();
     }
 
-    private void Validate(RequestCreatePost request)
+    private void Validate(RequestPost request)
     {
         var validator = new PostValidator();
 
