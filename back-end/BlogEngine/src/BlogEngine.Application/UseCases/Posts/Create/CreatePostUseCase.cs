@@ -32,6 +32,13 @@ public class CreatePostUseCase : ICreatePostUseCase
     public async Task<ResponsePost> Execute(RequestCreatePost request)
     {
         Validate(request);
+
+        var postTitleAlreadyExist = await _repository.CheckIfExistByTitle(request.Title);
+
+        if (postTitleAlreadyExist)
+        {
+            throw new ErrorOnValidationException([ResourceErrorMessages.TITLE_MUST_UNIQUE]);
+        }
         var idCategoryExist = await _getCategoryByIdUseCase.Execute(request.CategoryId);
 
         if (idCategoryExist is null)

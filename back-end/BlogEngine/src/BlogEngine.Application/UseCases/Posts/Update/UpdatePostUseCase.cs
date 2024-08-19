@@ -22,19 +22,18 @@ public class UpdatePostUseCase : IUpdatePostUseCase
     public async Task Execute(long id, RequestCreatePost request)
     {
         Validate(request);
+
         var post = await _repository.GetById(id);
         if (post is null) 
         {
             throw new NotFoundException(ResourceErrorMessages.POST_NOT_FOUND);
         }
+
         _mapper.Map(request, post);
 
         _repository.Update(post);
 
-        var commit = await _unitOfWork.Commit();
-
-        commit.ToString();
-
+        await _unitOfWork.Commit();
     }
 
     private void Validate(RequestCreatePost request)

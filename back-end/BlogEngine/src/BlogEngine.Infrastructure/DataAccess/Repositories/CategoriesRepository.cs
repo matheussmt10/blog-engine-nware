@@ -30,6 +30,13 @@ internal class CategoriesRepository : ICategoryRepository
         return result;
     }
 
+    public async Task<bool> CheckIfExistByTitle(string title)
+    {
+        var result = await _dbContext.Categories.AnyAsync(category => category.Title == title);
+
+        return result;
+    }
+
     public void Update(Category category)
     {
         _dbContext.Categories.Update(category);

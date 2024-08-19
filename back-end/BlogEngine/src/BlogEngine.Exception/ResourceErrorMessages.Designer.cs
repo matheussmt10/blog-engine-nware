@@ -124,6 +124,15 @@ namespace BlogEngine.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This title has already registred in our system. Please type a different title..
+        /// </summary>
+        public static string TITLE_MUST_UNIQUE {
+            get {
+                return ResourceManager.GetString("TITLE_MUST_UNIQUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The title is required.
         /// </summary>
         public static string TITLE_REQUIRED {

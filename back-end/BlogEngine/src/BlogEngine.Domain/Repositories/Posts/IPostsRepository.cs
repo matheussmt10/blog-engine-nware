@@ -8,6 +8,8 @@ public interface IPostsRepository
     public Task<List<Post>> GetAll();
     Task<List<Post>> GetAllByCategoryId(long categoryId);
 
+    Task<bool> CheckIfExistByTitle(string title);
+
     Task<Post?> GetById(long id);
 
     void Update(Post post);

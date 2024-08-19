@@ -7,6 +7,8 @@ public interface ICategoryRepository
 
     Task<Category?> GetById(long id);
 
+    Task<bool> CheckIfExistByTitle(string title);
+
     public Task Add(Category category);
 
     void Update(Category category);

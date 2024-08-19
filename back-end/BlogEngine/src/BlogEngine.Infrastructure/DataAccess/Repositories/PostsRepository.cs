@@ -32,6 +32,13 @@ internal class PostsRepository : IPostsRepository
         return result;
     }
 
+    public async Task<bool> CheckIfExistByTitle(string title)
+    {
+        var result = await _dbContext.Posts.AnyAsync(post => post.Title == title);
+
+        return result;
+    }
+
     public async Task<Post?> GetById(long id)
     {
         var result = await _dbContext.Posts.FirstOrDefaultAsync(post => post.Id == id);

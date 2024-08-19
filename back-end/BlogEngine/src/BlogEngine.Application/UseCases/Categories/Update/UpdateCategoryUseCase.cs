@@ -31,6 +31,13 @@ public class UpdateCategoryUseCase : IUpdateCategoryUseCase
             throw new NotFoundException(ResourceErrorMessages.CATEGORY_NOT_FOUND);
         }
 
+        var categoryTitleAlreadyExist = await _repository.CheckIfExistByTitle(request.Title);
+
+        if (categoryTitleAlreadyExist)
+        {
+            throw new ErrorOnValidationException([ResourceErrorMessages.TITLE_MUST_UNIQUE]);
+        }
+
         Validate(request);
 
         _mapper.Map(request, category);

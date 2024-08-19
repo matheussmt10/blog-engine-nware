@@ -6,29 +6,36 @@ using BlogEngine.Communication.Responses.Category;
 using BlogEngine.Domain.Entities;
 using BlogEngine.Domain.Repositories;
 using BlogEngine.Domain.Repositories.Categories;
+using BlogEngine.Exception;
 using BlogEngine.Exception.ExceptionBase;
 
 namespace BlogEngine.Application.UseCases.Categories.Create;
 
 public class CreateCategoryUseCase : ICreateCategoryUseCase
 {
-    private readonly ICategoryRepository _respository;
+    private readonly ICategoryRepository _repository;
     private readonly IMapper _mapper;
     private readonly IUnitOfWork _unitOfWork;
 
     public CreateCategoryUseCase(ICategoryRepository repository, IMapper mapper, IUnitOfWork unitOfWork)
     {
-        _respository = repository;
+        _repository = repository;
         _mapper = mapper;
         _unitOfWork = unitOfWork;
     }
     public async Task<ResponseCategory> Execute(RequestCategory request)
     {
         Validate(request);
-        
+
+        var categoryTitleAlreadyExist = await _repository.CheckIfExistByTitle(request.Title);
+
+        if (categoryTitleAlreadyExist)
+        {
+            throw new ErrorOnValidationException([ResourceErrorMessages.TITLE_MUST_UNIQUE]);
+        }
         var category = _mapper.Map<Category>(request);
 
-        await _respository.Add(category);
+        await _repository.Add(category);
 
         await _unitOfWork.Commit();
 
