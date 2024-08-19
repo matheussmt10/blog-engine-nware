@@ -29,38 +29,35 @@ const EditPost: React.FC<EditPostProps> = ({
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    if (postToEdit) {
+    if (show) {
+      // Preenche os campos do formulário com os dados do post a ser editado
       setTitle(postToEdit.title);
       setCategoryId(postToEdit.categoryId || '');
       setPublicationDate(postToEdit.publicationDate.split('T')[0]);
       setContent(postToEdit.content);
-    }
-  }, [postToEdit]);
 
-  useEffect(() => {
-    if (!show) {
+      // Carrega as categorias
+      const loadCategories = async () => {
+        try {
+          const data = await getCategories();
+          setCategories(data);
+        } catch (error: unknown) {
+          setErrorMessages([
+            error instanceof Error ? error.message : 'Error fetching categories',
+          ]);
+          setShowAlert(true);
+        }
+      };
+
+      loadCategories();
+    } else {
+      // Reseta os campos do formulário ao fechar o modal
       setTitle('');
       setValidated(false);
       setShowAlert(false);
       setErrorMessages([]);
     }
-  }, [show]);
-
-  useEffect(() => {
-    const loadCategories = async () => {
-      try {
-        const data = await getCategories();
-        setCategories(data);
-      } catch (error: unknown) {
-        setErrorMessages([
-          error instanceof Error ? error.message : 'Error fetching categories',
-        ]);
-        setShowAlert(true);
-      }
-    };
-
-    loadCategories();
-  }, []);
+  }, [show, postToEdit]);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();

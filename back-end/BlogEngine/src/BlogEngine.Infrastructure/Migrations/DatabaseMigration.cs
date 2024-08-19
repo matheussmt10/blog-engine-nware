@@ -9,7 +9,7 @@ public static class DatabaseMigration
     public static async Task MigrateDatabase(IServiceProvider service)
     {
         var dbContext = service.GetRequiredService<BlogEngineDBContext>();
-
+        var test = await dbContext.Database.CanConnectAsync();
         await dbContext.Database.MigrateAsync();
     }
 }

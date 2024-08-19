@@ -1,0 +1,35 @@
+
+networks:
+  backend:
+
+services:
+  blogenginedb:
+    container_name: blog-engine-db
+    image: mysql:latest
+    environment:
+        - MYSQL_ROOT_PASSWORD=admin
+        - MYSQL_DATABASE=blog_engine
+    networks:
+        - backend
+    ports:
+        - 8001:3306
+
+  blogengine.api:
+    container_name: blog-engine-api
+    depends_on:
+      - blogenginedb
+    image: ${DOCKER_REGISTRY-}blogengineapi
+    restart: always
+    build:
+      context: .
+      dockerfile: src/BlogEngine.API/Dockerfile
+    environment:
+        - DB_HOST=blogenginedb
+        - DB_NAME=blog_engine
+        - DB_USER=root
+        - DB_PASSWORD=admin
+    ports:
+        - 8002:8080
+    networks:
+        - backend
+

@@ -26,9 +26,14 @@ public static class DependencyInjectionExtension
     
     private static void AddDbContext(IServiceCollection services, IConfiguration configuration)
     {
-        var connectionString = configuration.GetConnectionString("ConnectionDb");
+        var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
+        var dbName = Environment.GetEnvironmentVariable("DB_NAME");
+        var dbUser = Environment.GetEnvironmentVariable("DB_USER");
+        var dbPassword = Environment.GetEnvironmentVariable("DB_PASSWORD");
 
-        var serverVersion = new MySqlServerVersion(new Version(8, 0, 39));
+        var connectionString = $"Server={dbHost};Database={dbName};port=3306;Uid={dbUser};Pwd={dbPassword}";
+
+        var serverVersion = new MySqlServerVersion(new Version(9, 0, 1));
 
         services.AddDbContext<BlogEngineDBContext>(config => config.UseMySql(connectionString, serverVersion));
     }

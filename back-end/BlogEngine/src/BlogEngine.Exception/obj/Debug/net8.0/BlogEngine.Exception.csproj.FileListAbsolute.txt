@@ -1,6 +1,8 @@
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\bin\Debug\net8.0\BlogEngine.Exception.deps.json
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\bin\Debug\net8.0\BlogEngine.Exception.dll
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\bin\Debug\net8.0\BlogEngine.Exception.pdb
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\obj\Debug\net8.0\BlogEngine.Exception.ResourceErrorMessages.resources
+C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\obj\Debug\net8.0\BlogEngine.Exception.csproj.GenerateResource.cache
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\obj\Debug\net8.0\BlogEngine.Exception.GeneratedMSBuildEditorConfig.editorconfig
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\obj\Debug\net8.0\BlogEngine.Exception.AssemblyInfoInputs.cache
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\obj\Debug\net8.0\BlogEngine.Exception.AssemblyInfo.cs
@@ -10,5 +12,3 @@ C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\obj\Debug\
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\obj\Debug\net8.0\refint\BlogEngine.Exception.dll
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\obj\Debug\net8.0\BlogEngine.Exception.pdb
 C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\obj\Debug\net8.0\ref\BlogEngine.Exception.dll
-C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\obj\Debug\net8.0\BlogEngine.Exception.ResourceErrorMessages.resources
-C:\dev\blog-engine-nware\back-end\BlogEngine\src\BlogEngine.Exception\obj\Debug\net8.0\BlogEngine.Exception.csproj.GenerateResource.cache

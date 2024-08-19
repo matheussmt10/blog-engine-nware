@@ -26,21 +26,24 @@ const CreatePost: React.FC<CreatePostProps> = ({
   const [errorMessages, setErrorMessages] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    const loadCategories = async () => {
-      try {
-        const data = await getCategories();
-        setCategories(data);
-      } catch (error: unknown) {
-        setErrorMessages([
-          error instanceof Error ? error.message : 'Error fetching categories',
-        ]);
-        setShowAlert(true);
-      }
-    };
+  const loadCategories = async () => {
+    try {
+      const data = await getCategories();
+      setCategories(data);
+    } catch (error: unknown) {
+      setErrorMessages([
+        error instanceof Error ? error.message : 'Error fetching categories',
+      ]);
+      setShowAlert(true);
+    }
+  };
 
-    loadCategories();
-  }, []);
+  useEffect(() => {
+    if (show) {
+      // Carregar categorias sempre que o modal é aberto
+      loadCategories();
+    }
+  }, [show]);
 
   const resetForm = () => {
     setTitle('');
