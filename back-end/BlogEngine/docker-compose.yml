@@ -1,3 +1,4 @@
+version: '3.8'
 
 networks:
   backend:
@@ -7,29 +8,44 @@ services:
     container_name: blog-engine-db
     image: mysql:latest
     environment:
-        - MYSQL_ROOT_PASSWORD=admin
-        - MYSQL_DATABASE=blog_engine
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_DATABASE=blog_engine
     networks:
-        - backend
+      - backend
     ports:
-        - 8001:3306
+      - 8001:3306
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   blogengine.api:
     container_name: blog-engine-api
     depends_on:
-      - blogenginedb
+      blogenginedb:
+        condition: service_healthy
     image: ${DOCKER_REGISTRY-}blogengineapi
     restart: always
     build:
       context: .
       dockerfile: src/BlogEngine.API/Dockerfile
     environment:
-        - DB_HOST=blogenginedb
-        - DB_NAME=blog_engine
-        - DB_USER=root
-        - DB_PASSWORD=admin
+      - DB_HOST=blogenginedb
+      - DB_NAME=blog_engine
+      - DB_USER=root
+      - DB_PASSWORD=admin
     ports:
-        - 8002:8080
+      - 8002:8080
     networks:
-        - backend
+      - backend
 
+  blogengine.frontend:
+    container_name: blog-engine-frontend
+    build:
+      context: ../../front-end
+      dockerfile: Dockerfile
+    ports:
+      - 8003:80
+    networks:
+      - backend
