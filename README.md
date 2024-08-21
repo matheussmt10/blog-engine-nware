@@ -34,11 +34,10 @@ Also, I'm sending the Postman file to call the API, download it [here](https://g
 
 * The frontend project start up together with the backend project if I start the project up with docker compose.
 
-```
 
 or
 
-```
+
 If you wish to start the frontend project up indiviually, you could follow the instructions below:
 ```
 1. cd frontend
