@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "52a4a4b8-e07e-48e0-84c2-cbde655ca3ab",
+		"name": "blog-engine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21356631"
+	},
+	"item": [
+		{
+			"name": "posts",
+			"item": [
+				{
+					"name": "/posts",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/posts/{id}",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/posts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"string\",\r\n  \"publicationDate\": \"2024-08-17T17:11:10.754Z\",\r\n  \"content\": \"string\",\r\n  \"categoryId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7208/posts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7208",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/posts/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"string\",\r\n  \"publicationDate\": \"2024-08-17T17:10:02.416Z\",\r\n  \"content\": \"string\",\r\n  \"categoryId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7208/posts/08dcbec1-0f19-4da2-865f-0afeb342d380",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7208",
+							"path": [
+								"posts",
+								"08dcbec1-0f19-4da2-865f-0afeb342d380"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "/categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7208/categories",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7208",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/categories/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7208/categories/08dcbec0-ef24-4007-8deb-a7114a1f0373",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7208",
+							"path": [
+								"categories",
+								"08dcbec0-ef24-4007-8deb-a7114a1f0373"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/categories/{id}/posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7208/categories/08dcbec0-ef24-4007-8deb-a7114a1f0373/posts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7208",
+							"path": [
+								"categories",
+								"08dcbec0-ef24-4007-8deb-a7114a1f0373",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"string\",\r\n  \"publicationDate\": \"2024-08-17T17:11:10.754Z\",\r\n  \"content\": \"string\",\r\n  \"categoryId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7208/posts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7208",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/categories/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"string\",\r\n  \"publicationDate\": \"2024-08-17T17:10:02.416Z\",\r\n  \"content\": \"string\",\r\n  \"categoryId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7208/posts/08dcbec1-0f19-4da2-865f-0afeb342d380",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7208",
+							"path": [
+								"posts",
+								"08dcbec1-0f19-4da2-865f-0afeb342d380"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
