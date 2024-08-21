@@ -38,7 +38,7 @@ Also, I'm sending the Postman file to call the API, download it [here](https://g
 or
 
 
-If you wish to start the frontend project up indiviually, you could follow the instructions below:
+* If you wish to start the frontend project up indiviually, you could follow the instructions below:
 ```
 1. cd frontend
 2. npm install
