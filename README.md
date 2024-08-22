@@ -52,6 +52,10 @@ http://localhost:8003
 
 # API Endpoints
 
+```
+http://localhost:8002
+```
+
 ## Categories
 
 | Method | Endpoint              | Description                                |
