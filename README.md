@@ -16,7 +16,6 @@ I recommend using [Docker](https://www.docker.com) to install and run all projec
 
 ```
 1. git clone https://github.com/matheussmt10/blog-engine-nware.git
-
 ```
 
 * Install the dependencies and start the server:
@@ -43,7 +42,6 @@ or
 1. cd frontend
 2. npm install
 3. npm run dev
-
 ```
 
 # Frontend App Endpoint
