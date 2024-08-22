@@ -46,6 +46,12 @@ or
 
 ```
 
+# Frontend App Endpoint
+
+```
+http://localhost:8003
+```
+
 # API Endpoints
 
 ## Categories
